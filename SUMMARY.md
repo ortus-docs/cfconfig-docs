@@ -13,7 +13,16 @@
 
 * [Installation](using-the-cli/installation.md)
 * [Usage](usage.md)
-* [Command Overview](using-the-cli/command-overview.md)
+* [Command Overview](using-the-cli/commands/command-overview.md)
+  * [Export Settings](using-the-cli/commands/command-overview/cfconfig-export.md)
+  * Import Settings
+  * Transfer Settings
+  * Diff Settings
+  * Set/View A Setting
+  * Manage Datasources
+  * Manage CF Mappings
+  * Manage Caches
+  * Manage Mail Servers
 
 ## Using the Services
 
