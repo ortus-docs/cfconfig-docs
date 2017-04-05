@@ -15,7 +15,7 @@
 * [Usage](usage.md)
 * [Command Overview](using-the-cli/commands/command-overview.md)
   * [Export Settings](using-the-cli/commands/command-overview/cfconfig-export.md)
-  * Import Settings
+  * [Import Settings](using-the-cli/commands/command-overview/import-settings.md)
   * Transfer Settings
   * Diff Settings
   * Set/View A Setting
