@@ -21,7 +21,7 @@
   * [Set/View Settings](using-the-cli/commands/command-overview/setview-a-setting.md)
   * [Manage Datasources](using-the-cli/commands/command-overview/manage-datasources.md)
   * [Manage CF Mappings](using-the-cli/commands/command-overview/manage-cf-mappings.md)
-  * Manage Caches
+  * [Manage Caches](using-the-cli/commands/command-overview/manage-caches.md)
   * [Manage Mail Servers](using-the-cli/commands/command-overview/manage-mail-servers.md)
 
 ## Using the Services
