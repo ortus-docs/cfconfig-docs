@@ -7,6 +7,7 @@
 * [Authors](introduction/authors.md)
 * [Overview](overview.md)
 * [Getting Started Guide](getting-started-guide.md)
+* [Supported Engines](supported-engines.md)
 
 ## Using the CLI
 
