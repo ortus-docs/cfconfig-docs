@@ -16,7 +16,7 @@
 * [Command Overview](using-the-cli/commands/command-overview.md)
   * [Export Settings](using-the-cli/commands/command-overview/cfconfig-export.md)
   * [Import Settings](using-the-cli/commands/command-overview/import-settings.md)
-  * Transfer Settings
+  * [Transfer Settings](using-the-cli/commands/command-overview/transfer-settings.md)
   * Diff Settings
   * Set/View A Setting
   * Manage Datasources
