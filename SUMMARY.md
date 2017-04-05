@@ -22,7 +22,7 @@
   * [Manage Datasources](using-the-cli/commands/command-overview/manage-datasources.md)
   * [Manage CF Mappings](using-the-cli/commands/command-overview/manage-cf-mappings.md)
   * Manage Caches
-  * Manage Mail Servers
+  * [Manage Mail Servers](using-the-cli/commands/command-overview/manage-mail-servers.md)
 
 ## Using the Services
 
