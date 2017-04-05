@@ -40,7 +40,7 @@ We all make mistakes from time to time :) So why not let us know about it and he
 
 
 # Professional Open Source
-![Ortus Solutions, Corp](images/ortussolutions_button.png)
+![Ortus Solutions, Corp](![![images/](/assets/shalom.jpg)](/assets/ortussolutions_button.png)ortussolutions_button.png)
 
 CFConfig is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 * Custom Development
