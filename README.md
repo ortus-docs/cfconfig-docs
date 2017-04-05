@@ -3,6 +3,7 @@
 ![CFConfig](images/CfConfigLogo300.png)
 
 Welcome to the CFConfig Manual.  CFConfig is a project aimed to help server admins and developers alike manage the configuration of their favorite CF engine.
+
 # Versioning
 CFconfig is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible.  Releases will be numbered with the following format:
 
