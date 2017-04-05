@@ -3,7 +3,7 @@
 ## Introduction
 
 * [Introduction](README.md)
-* [About This Book](introduction/about-this-book.md)
+* [About This Book](introduction/README.md)
 * [Authors](introduction/authors.md)
 * [Overview](overview.md)
 * [Getting Started Guide](getting-started-guide.md)
