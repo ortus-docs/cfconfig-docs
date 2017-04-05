@@ -1,0 +1,36 @@
+{
+    "pdf": {
+        "margin": {
+            "bottom": 56,
+            "left": 25,
+            "right": 25,
+            "top": 56
+        }
+    },
+    "plugins": [
+        "richquotes",
+        "edit-link",
+        "github",
+        "advanced-emoji",
+        "sitemap",
+        "collapsible-chapters"
+    ],
+    "pluginsConfig": {
+        "edit-link": {
+            "base": "https://github.com/ortus-docs/cfconfig-docs/tree/master",
+            "label": "Edit This Page"
+        },
+        "github": {
+            "url": "https://github.com/ortus-docs/cfconfig-docs"
+        },
+        "sitemap": {
+            "hostname": "https://cfconfig.ortusbooks.com"
+        }
+    },
+    "links": {
+        "sharing": {
+            "facebook": false,
+            "twitter": false
+        }
+    }
+}
