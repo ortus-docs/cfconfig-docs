@@ -2,7 +2,7 @@
 
 ## Introduction
 
-* [Introduction](introduction/README.md)
+* [Introduction](README.md)
 * [About This Book](introduction/about-this-book.md)
 * [Authors](introduction/authors.md)
 * [Overview](introduction/overview.md)
@@ -26,6 +26,4 @@
   * [Manage Mail Servers](using-the-cli/commands/command-overview/manage-mail-servers.md)
 
 ## Using the Services
-
-
 
