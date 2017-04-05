@@ -11,6 +11,8 @@
 ## Using the CLI
 
 * [Installation](using-the-cli/installation.md)
+* [Usage](usage.md)
+* [Command Overview](using-the-cli/command-overview.md)
 
 ## Using the Services
 
