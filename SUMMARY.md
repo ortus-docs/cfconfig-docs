@@ -23,6 +23,7 @@
   * [Manage CF Mappings](using-the-cli/commands/command-overview/manage-cf-mappings.md)
   * [Manage Caches](using-the-cli/commands/command-overview/manage-caches.md)
   * [Manage Mail Servers](using-the-cli/commands/command-overview/manage-mail-servers.md)
+* [Config Items](using-the-cli/config-items.md)
 
 ## Using the Services
 
