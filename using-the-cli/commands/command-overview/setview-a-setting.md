@@ -22,3 +22,10 @@ cfconfig set adminPassword=commandbox
 cfconfig set adminPassword=commandbox to=serverName
 cfconfig set adminPassword=commandbox to=/path/to/server/install/home toFormat=adobe@11
 ```
+
+You can actually use CFConfig set to manage the static contents of a JSON export. The JSON file is, after all, just another location you can read from or write to.
+
+# Pull current config from server into JSON file
+cfconfig export myConfig.json
+# Edit JSON file directly
+cfconfig set adminPassword=commandbox to=myConfig.json
