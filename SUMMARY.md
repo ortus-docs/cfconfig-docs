@@ -5,4 +5,5 @@
   * [First Chapter](chapter1.md)
   * [Authors](introduction/authors.md)
 * [Overview](overview.md)
+* [Getting Started Guide](getting-started-guide.md)
 

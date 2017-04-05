@@ -1,5 +1,3 @@
-# Overview
-
 ```
    ____ _____ ____             __ _       
   / ___|  ___/ ___|___  _ __  / _(_) __ _ 
@@ -8,6 +6,29 @@
   \____|_|   \____\___/|_| |_|_| |_|\__, |
                                     |___/ 
 ```
+
+# Overview
+
+CFConfig gives you the ability to manage most every setting that shows up in the web administrator, but instead of logging into a web interface, you can mange it from the command line by hand or as part of a scripted server setup.  You can seamless transfer config for all the following:
+
+- CF Mappings
+- Datasources
+- Mail servers
+- Request, session, or application timeouts
+- Licensing information (for Adobe)
+- Passwords
+-Template caching settings
+-Basically any settings in the web based administrator
+
+## Use on any server
+
+CFConfig will work on any CF server regardless of how it was installed.  Since it interacts directly with the config files, the server doesn't need to be running.  Heck, the server doesn't even need to be installed yet!  CFConfig can be used to write out config files before you even start a CommandBox server for the first time.  
+
+But it's not just for CommandBox servers.  All you need is the folder path to the CF home in your server installation and you can point the CFConfig library at it.  This means CFConfig can be used for syncing config across existing servers, standing up docker containers, or provisioning Vagrant VMs.
+
+## How does it work
+
+CFConfig interfaces directly with the XML and property files used by your CF engine to store its configuration.  It takes care of translating the config properly so you use the same commands regardless of what engine you're managing the config for. The tool will try hard to figure out the version of ColdFusion or Lucee that you have installed and there are hints you can give it as well.  Both ACF and Lucee also have settings to monitor the config files for changes so you don't even need to restart the server to pick up your changes.
 
 CFConfig exists in two parts:
 
