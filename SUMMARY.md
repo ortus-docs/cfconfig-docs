@@ -2,12 +2,12 @@
 
 ## Introduction
 
-* [Introduction](README.md)
-* [About This Book](introduction/README.md)
+* [Introduction](introduction/README.md)
+* [About This Book](introduction/about-this-book.md)
 * [Authors](introduction/authors.md)
-* [Overview](overview.md)
-* [Getting Started Guide](getting-started-guide.md)
-* [Supported Engines](supported-engines.md)
+* [Overview](introduction/overview.md)
+* [Getting Started Guide](introduction/getting-started-guide.md)
+* [Supported Engines](introduction/supported-engines.md)
 
 ## Using the CLI
 
