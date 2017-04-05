@@ -1,4 +1,4 @@
-![](/assets/CfConfigLogo300.png)# CFConfig Manual - Version 0.5.0 alpha
+# CFConfig Manual - Version 0.5.0 alpha
 
 ![CFConfig](images/CfConfigLogo300.png)
 
