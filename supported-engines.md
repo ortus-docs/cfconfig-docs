@@ -7,15 +7,11 @@ If you don't have time for a pull request, please [enter a ticket](https://ortus
 Here's an overview of what's supported.
 
 - **Lucee 4.x/5.x** - Nearly complete.  Missing custom tags, debugging, REST mappings, error settings, component settings
-
-
-- **Adobe CF9** - Everything
-
-- **Adobe CF10** - Everything
-- **Adobe C2016** - In progress…
-- **Adobe CF11** - In progress…
-- **Adobe C2016** - In progress…
-- **Railo 4.x** - Everything– probably can heavily re-use from Lucee 4.x
+- **Adobe C2016** - Nearly complete.  
+- **Adobe CF11** - Nearly complete.  
+- **Adobe CF10** - No support yet
+- **Adobe CF9** - No support yet
+- **Railo 4.x** - No support yet.  Probably can heavily re-used from Lucee 4.x
 
 ## Sponsored Support
 
