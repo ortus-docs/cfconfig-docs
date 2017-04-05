@@ -1,6 +1,6 @@
 # CFConfig CLI Usage
 
-## Specifying a server
+## Server Home
 
 There are 3 ways that CFConfig will determine the server(s) you would like it to operate on.  Each command has a `to` and/or `from` parameter to specify this.
 
@@ -37,6 +37,23 @@ Just provide the path to the JSON file.  This is auto-deteced if the path ends i
 C:/path/to/myConfig.json
 ```
 
-## Specifying the server format (engine/version)
+## Server Format (engine/version)
 
 Every command with a `to` and/or `from` parameter also has a matching `toFormat and/or `fromFormat` parameter.  In most cases, you don't need to provide this.  If you are pointing to an existing CommandBox server, or typical server installation, CFConfig will examine the files in the CF home to determine what engine and version it is.  However, if you are writing files to an empty or non-existent directory, you'll need to tell CFConfig what format to write them in.  
+
+Format is specified as `engine@version` where:
+- `engine` is the name of the CF engine
+- `version` is a semantic version number representing the engine version
+
+Possible engine values are:
+- **luceeWeb** - Lucee web context
+- **luceeServer** - Lucee server context
+- **adobe** - Adobe server
+- **railoWeb** - Railo web Context
+- **railoServer** - Railo server context
+
+Here are some examples of server formats:
+- adobe@10
+- adobe@11.0.10
+- luceeServer@5
+- luceeWeb@4.5
