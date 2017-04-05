@@ -2,12 +2,14 @@
 
 ## Introduction
 
+* [Introduction](README.md)
 * [Introduction](introduction/README.md)
 * [About This Book](introduction/about-this-book.md)
 * [Authors](introduction/authors.md)
 * [Overview](introduction/overview.md)
 * [Getting Started Guide](introduction/getting-started-guide.md)
 * [Supported Engines](introduction/supported-engines.md)
+* [Config Items](using-the-cli/config-items.md)
 
 ## Using the CLI
 
@@ -23,7 +25,6 @@
   * [Manage CF Mappings](using-the-cli/commands/command-overview/manage-cf-mappings.md)
   * [Manage Caches](using-the-cli/commands/command-overview/manage-caches.md)
   * [Manage Mail Servers](using-the-cli/commands/command-overview/manage-mail-servers.md)
-* [Config Items](using-the-cli/config-items.md)
 
 ## Using the Services
 
