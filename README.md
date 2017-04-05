@@ -1,11 +1,14 @@
-# CFConfig Manual - Version 0.5.0 alpha
+![](/assets/CfConfigLogo300.png)# CFConfig Manual - Version 0.5.0 alpha
 
-<img src="images/CommandBoxLogo.png" width="300" alt="CommandBox" />
+![CFConfig](images/CfConfigLogo300.png)
 
-Welcome to the CommandBox Manual.  CommandBox is a standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface (CLI) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and sweet ASCII art. It seamlessly integrate to work with any of [Ortus Solutions](http://www.ortussolutions.com/products) *Box products but it is also open for extensibility for any ColdFusion (CFML) project as it is also written in ColdFusion (CFML) using our concepts of CommandBox Commands.
+Welcome to the CFConfig Manual.  CFConfig is a project aimed to help server admins and developers alike manage the configuration of their favorite CF engine in today's world of containerized servers and so many actively used CF engines. CFConfig exists in two parts:
+
+- A service layer for reading, writing, and storing configuration for all CF engines.
+- A set of scriptable commands built on top of CommandBox CLI 
 
 # Versioning
-CommandBox is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible.  Releases will be numbered with the following format:
+CFconfig is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible.  Releases will be numbered with the following format:
 
 ```
 <major>.<minor>.<patch>.<buildID>
