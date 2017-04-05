@@ -22,26 +22,27 @@ And constructed with the following guidelines:
 
 
 # License
-CommandBox is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/lgpl.html)
+CFconfig is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/lgpl.html)
 
 * Copyright by Ortus Solutions, Corp
-* CommandBox is a registered trademark by Ortus Solutions, Corp
 
 
->**Info** The CommandBox Websites, Documentation, logo and content have a separate license and they are a separate entity.
+>**Info** The CFconfig Websites, Documentation, logo and content have a separate license and they are a separate entity.
 
 # Discussion & Help
-The CommandBox help and discussion group can be found here: https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox
+The CFconfig help and discussion group can be found here: https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox
 
 # Reporting a Bug
-We all make mistakes from time to time :) So why not let us know about it and help us out.  We also love pull requests, so please star us and fork us: https://github.com/ortus-solutions/commandbox
-* https://ortussolutions.atlassian.net/browse/COMMANDBOX
+We all make mistakes from time to time :) So why not let us know about it and help us out.  We also love pull requests, so please star us and fork us: 
+* https://github.com/ortus-solutions/cfconfig
+* https://github.com/ortus-solutions/commandbox-cfconfig
+* https://ortussolutions.atlassian.net/browse/CFConfig
 
 
 # Professional Open Source
 ![Ortus Solutions, Corp](images/ortussolutions_button.png)
 
-CommandBox is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
+CFConfig is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 * Custom Development
 * Professional Support & Mentoring
 * Training
@@ -52,8 +53,10 @@ CommandBox is a professional open source software backed by [Ortus Solutions, Co
 
 # Resources
 * Official Site: http://www.ortussolutions.com/products/commandbox
-* Source Code: https://github.com/ortus-solutions/commandbox
-* Bug Tracker: https://ortussolutions.atlassian.net/browse/COMMANDBOX
+* Source Code: 
+ * https://github.com/ortus-solutions/commandbox-cfconfig
+ * https://github.com/ortus-solutions/cfconfig
+* Bug Tracker: https://ortussolutions.atlassian.net/browse/CFConfig
 * Twitter: [@ortussolutions](http://www.twitter.com/ortussolutions)
 * Facebook: https://www.facebook.com/ortussolutions
 * Google+: https://google.com/+OrtusSolutions
