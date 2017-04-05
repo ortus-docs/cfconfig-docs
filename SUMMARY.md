@@ -19,7 +19,7 @@
   * [Transfer Settings](using-the-cli/commands/command-overview/transfer-settings.md)
   * [Diff Settings](using-the-cli/commands/command-overview/diff-settings.md)
   * [Set/View Settings](using-the-cli/commands/command-overview/setview-a-setting.md)
-  * Manage Datasources
+  * [Manage Datasources](using-the-cli/commands/command-overview/manage-datasources.md)
   * Manage CF Mappings
   * Manage Caches
   * Manage Mail Servers
