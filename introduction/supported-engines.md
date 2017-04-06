@@ -1,6 +1,6 @@
 # CFonfig Supported CF Engines
 
-This project is a work in progress. We're starting with the most common engines and the most common config settings so it's possible you may find an engine or config setting that's not supported yet. Please submit pull requests for these. It's not hard, it's just tedious to do all the copy/paste. We'd love collaborate on this project
+This project is a work in progress. We're starting with the most common engines and the most common config settings so it's possible you may find an engine or config setting that's not supported yet. Please submit pull requests for these. It's not hard, it's just tedious to do all the copy/paste. We'd love collaboration on this project
 
 If you don't have time for a pull request, please [enter a ticket](https://ortussolutions.atlassian.net/projects/CFCONFIG) so we can track remaining features.
 
