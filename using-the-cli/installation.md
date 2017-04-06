@@ -1,4 +1,4 @@
-# CFConfig CLI installation 
+# CFConfig CLI Installation 
 
 The CFConfig CLI lives on ForgeBox and can be installed into CommandBox with the following command:
 ```
