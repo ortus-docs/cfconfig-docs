@@ -27,3 +27,5 @@
 
 ## Using the Services
 
+* [Installation](using-the-services/installation.md)
+
