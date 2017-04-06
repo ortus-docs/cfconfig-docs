@@ -8,12 +8,12 @@
 * [Overview](introduction/overview.md)
 * [Getting Started Guide](introduction/getting-started-guide.md)
 * [Supported Engines](introduction/supported-engines.md)
-* [Config Items](using-the-cli/config-items.md)
+* [Config Items](introduction/config-items.md)
 
 ## Using the CLI
 
 * [Installation](using-the-cli/installation.md)
-* [Usage](usage.md)
+* [Usage](using-the-cli/usage.md)
 * [Command Overview](using-the-cli/commands/command-overview.md)
   * [Export Settings](using-the-cli/commands/command-overview/cfconfig-export.md)
   * [Import Settings](using-the-cli/commands/command-overview/import-settings.md)
