@@ -2,7 +2,7 @@
 
 Here's the list of settings that CFConfig can manage
 
-```
+```js
 // One of the strings "never", "once", "always"
 name='inspectTemplate' type='string'
 // Number of templates to cache
