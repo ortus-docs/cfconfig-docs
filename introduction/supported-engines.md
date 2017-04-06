@@ -11,7 +11,7 @@ Here's an overview of what's supported.
 - **Adobe CF11** - Nearly complete.  
 - **Adobe CF10** - No support yet
 - **Adobe CF9** - No support yet
-- **Railo 4.x** - No support yet.  Probably can heavily re-used from Lucee 4.x
+- **Railo 4.x** - No support yet.  Probably can heavily reuse from Lucee 4.x
 
 ## Sponsored Support
 
