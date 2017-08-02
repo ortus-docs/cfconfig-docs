@@ -1,6 +1,6 @@
 # Server Start
 
-Every time a server starts, CFConfig will load configuration into your server by convention. 
+Every time a server starts, CFConfig will load configuration into your server by convention.  For Lucee servers, settings go in the server context by default.  Since each CommandBox Lucee server only has a single web context, the differentiation is mostly moot.
 
 ## Import from JSON file
 
