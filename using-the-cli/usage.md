@@ -6,7 +6,7 @@ There are 3 ways that CFConfig will determine the server(s) you would like it to
 
 1. The current working directory if it is the web root for a CommandBox server.
 2. You provide the name of a previously-started CommandBox server
-3) You provide a file path to the CF home of the server
+3. You provide a file path to the CF home of the server
 
 
 ### Lucee 4/5 web CF home

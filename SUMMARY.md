@@ -29,5 +29,5 @@
 
 * [Installation](using-the-services/installation.md)
 * [Usage](using-the-services/usage.md)
-* API Overview
+* [API Overview](using-the-services/api-overview.md)
 
