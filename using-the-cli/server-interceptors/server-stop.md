@@ -14,7 +14,7 @@ The setting above defaults to off.  You need to opt-in to this behavior.
 
 Every time a server does a graceful shutdown via the `server stop` command, a suitable JSON file will be searched for using the same criteria used by the server start interceptor.  If a JSON file is found, the current engine's config will be exported into it.
 
-This ensure that any changes you make in the CF admin will be reflected back in your JSON file so you can commit it and share it with your coworkers.  
+This ensures that any changes you make in the CF admin will be reflected back in your JSON file so you can commit it and share it with your coworkers.  Please note, stopping a server from your system tray does not currently fire the server stop interceptors.
 
 ## Disable
 
