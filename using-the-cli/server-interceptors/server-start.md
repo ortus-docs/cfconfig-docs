@@ -18,7 +18,7 @@ C:/> SETX cfconfigfile "C:/path/to/myConfig.json"
 
 _Note: CommandBox won't pick up new environment variables in Windows until you close and reopen the shell._
 
-### server.json property
+### `server.json` property
 
 If there is a `CFConfigFile` property in your `server.json` file, it will be used.  It can contain an absolute path or a path that is relative to the `server.json` file.
 ```js
@@ -32,3 +32,8 @@ or
   "cfconfigfile" : "../workbench/myConfig.json"
 }
 ```
+
+### `.cfconfig.json` File in Webroot
+
+
+
