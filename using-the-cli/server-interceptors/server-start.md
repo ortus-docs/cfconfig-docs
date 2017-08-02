@@ -23,12 +23,8 @@ _Note: CommandBox won't pick up new environment variables in Windows until you c
 If there is a `CFConfigFile` property in your `server.json` file, it will be used.  It can contain an absolute path or a path that is relative to the `server.json` file.
 ```js
 {
-  "cfconfigfile" : "C:/path/to/myConfig.json"
-}
-```
-or
-```js
-{
+  "cfconfigfile" : "C:/path/to/myConfig.json",
+  // or 
   "cfconfigfile" : "../workbench/myConfig.json"
 }
 ```
@@ -36,4 +32,4 @@ or
 ### `.cfconfig.json` File in Webroot
 
 
-
+If there is a file in the web root called `.cfconfig.json`, it will be used.  Note the file starts with a period (`.`).  This is so web servers like Apache won't service the file by default since it's "hidden".  Note this is the easiest approach, but probably the least secure.  We recommend it just for development purposes.
