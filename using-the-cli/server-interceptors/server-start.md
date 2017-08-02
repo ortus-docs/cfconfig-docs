@@ -16,7 +16,19 @@ If an environment variable exists with the name `CFConfigFile`, it will be used 
 C:/> SETX cfconfigfile "C:/path/to/myConfig.json"
 ```
 
+_Note: CommandBox won't pick up new environment variables in Windows until you close and reopen the shell._
+
 ### server.json property
 
-A `CFConfigFile` property in your `server.json` file that contains an absolute path or a path that is relative to the `server.json` file.
-
+If there is a `CFConfigFile` property in your `server.json` file, it will be used.  It can contain an absolute path or a path that is relative to the `server.json` file.
+```js
+{
+  "cfconfigfile" : "C:/path/to/myConfig.json"
+}
+```
+or
+```js
+{
+  "cfconfigfile" : "../workbench/myConfig.json"
+}
+```
