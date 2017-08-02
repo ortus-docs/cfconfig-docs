@@ -15,6 +15,11 @@ If an environment variable exists with the name `CFConfigFile`, it will be used 
 ```
 C:/> SETX cfconfigfile "C:/path/to/myConfig.json"
 ```
+And on Unix...
+```
+$> cfconfigfile=C:/path/to/myConfig.json
+$> export cfconfigfile
+```
 
 _Note: CommandBox won't pick up new environment variables in Windows until you close and reopen the shell._
 
@@ -36,4 +41,21 @@ If there is a file in the web root called `.cfconfig.json`, it will be used.  No
 
 ## Set Individual Settings
 
-If you don't want to have a full JSON file, but just want to set some ad-hoc settings, you can do this via environment variables.  These will load regardless of whether a JSON file was imported so it gives you a chance to override specifics like passwords.  Environment variables are also perfect for cloud environments and Docker iamges.
+If you don't want to have a full JSON file, but just want to set some ad-hoc settings, you can do this via environment variables.  These will load regardless of whether a JSON file was imported so it gives you a chance to override specifics like passwords.  Environment variables are also perfect for cloud environments and Docker images.
+
+### Variable names
+
+When a server starts up, all environment variables will be looped over, and all the ones that start with `cfconfig_` will be used.  The naming format is `cfconfig_xxx` where `xxx` is the name of a valid config item such as `adminPassword` or `requestTimeout`.
+
+Here's an example of what setting that up on Windows might look like:
+
+```
+C:/> SETX cfconfig_adminPassword "myCoolPass123"
+```
+And on Unix...
+```
+$> cfconfig_adminPassword=myCoolPass123
+$> export cfconfig_adminPassword
+```
+
+Now, every time a CommandBox server is started on this machine, that password will be loaded in, even if a previous JSON import had another password.
