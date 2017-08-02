@@ -60,6 +60,8 @@ $> export cfconfig_adminPassword
 
 Now, every time a CommandBox server is started on this machine, that password will be loaded in, even if a previous JSON import had another password.
 
+Note, this approach is only suitable for simple settings.  If you want to add datasources, CF mappings, etc you'd need to use a full JSON file import.
+
 ## Admin Passwords on Lucee
 
 As a safety precaution, any time an `adminPassword` setting is present in an auto-imported JSON file or a `cfconfig_adminPassword` environment variable is set on a Lucee server, the server start interceptor will set that password into the web context as well as the default server context.  This is to prevent a production server getting deployed with no password on the web context.  
