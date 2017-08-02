@@ -5,3 +5,6 @@ The CommandBox CLI module will automatically register several interceptors that 
 This functionality only applies to servers that are started in CommandBox.  Examples would be using CommandBox for local development, deploying our Docker images or Heroku buildpacks.
 
 You can use the CFConfig commands to manually import/export configuration on 'standard' CF installs, but these automatic interceptors here don't apply.  
+
+* [Server Start](/using-the-cli/server-interceptors/server-start.md) -- Import config automatically when the server stops
+* [Server Stop](/using-the-cli/server-interceptors/server-stop.md) -- Optionally export config when the server stops
