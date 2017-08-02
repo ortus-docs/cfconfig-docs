@@ -33,3 +33,7 @@ If there is a `CFConfigFile` property in your `server.json` file, it will be use
 
 
 If there is a file in the web root called `.cfconfig.json`, it will be used.  Note the file starts with a period (`.`).  This is so web servers like Apache won't service the file by default since it's "hidden".  Note this is the easiest approach, but probably the least secure.  We recommend it just for development purposes.
+
+## Set Individual Settings
+
+If you don't want to have a full JSON file, but just want to set some ad-hoc settings, you can do this via environment variables.  These will load regardless of whether a JSON file was imported so it gives you a chance to override specifics like passwords.  Environment variables are also perfect for cloud environments and Docker iamges.

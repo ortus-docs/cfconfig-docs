@@ -14,7 +14,7 @@
 
 * [Installation](using-the-cli/installation.md)
 * [Usage](using-the-cli/usage.md)
-* [Server Interceptors](using-the-cli/server-interceptors.md)
+* [CommandBox Server Interceptors](using-the-cli/server-interceptors.md)
   * [Server Start](using-the-cli/server-interceptors/server-start.md)
   * [Server Stop](using-the-cli/server-interceptors/server-stop.md)
 * [Command Overview](using-the-cli/commands/command-overview.md)
