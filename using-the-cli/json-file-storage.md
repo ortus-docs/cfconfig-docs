@@ -4,4 +4,22 @@ CFConfig can represent the settings for any server in a generic JSON format.  Ev
 
 You may choose to commit your settings to a file called `.cfconfig.json` in the webroot, which will cause them to automatically get loaded in one every server start.  This is the easiest way to share configuration with your coworkers.  One issue with this may be that you don't want the json file in your web root in case it accidentally gets moved to a production server and it directly accessible.  Web servers such as Apache will not serve files starting with `.` by default, but other web servers will happily share those "hidden" files.  You can work around this by placing the JSON file outside the web root and using the `cfconfigFile` property in your `server.json` to point to it.  You can use relative paths like `../build/mySettings.json`.
 
-Another potential issue with the JSON file is that you may have secrets in your config such as passwords that you don't want to commit to your repo or that are simply different on some servers.  You can manage this by using CommandBox's "system settings" which will expand any environment variables in your CFConfig JSON file.  
+Another potential issue with the JSON file is that you may have secrets in your config such as passwords that you don't want to commit to your repo or that are simply different on some servers.  You can manage this by using CommandBox's "system settings" which will expand any environment variables in your CFConfig JSON file.  System settings are in the format `${mySetting}` and would look like so in your JSON file:
+
+```js
+{
+  "adminPassword" : "${LOCAL_DEV_CF_PASS}"
+}
+```
+
+That JSON above would automatically replace the `adminPassword` setting with the value of an environment variable called `LOCAL_DEV_CF_PASS`.
+
+You can take this a step further and provide a default value so the env var is just an override.  The format is `${name:default}`.
+
+```js
+{
+"requestTimeout" : "${LOCAL_DEV_TIMEOUT:0,0,1,0}"
+}
+```
+
+That JSON above would set the request timeout to 1 minute unless it was overridden by an env var called `LOCAL_DEV_TIMEOUT`.
