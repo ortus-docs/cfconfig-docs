@@ -51,3 +51,11 @@ cfconfig cache save name=myCache type=RAM custom:timeToIdleSeconds=0 custom:time
 ```
 
 ## Deleting an existing cache
+
+Identify the cache uniquely by the name.
+
+```
+cfconfig cache delete myCache
+cfconfig cache delete myCache serverName
+cfconfig cache delete myCache /path/to/server/home
+```
