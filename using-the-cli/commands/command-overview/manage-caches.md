@@ -6,7 +6,7 @@ There are three commands to manage Lucee/Railo caches.
 
 List all caches for a server.
 
-```
+```bash
 # Lucee server context of the CommandBox server in the current directory
 cfconfig cache list
 # Lucee web context of the CommandBox server in the current directory
