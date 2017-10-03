@@ -4,8 +4,6 @@ There are three commands to manage datasources.
 
 ## List all datasources
 
-List all datasources for a server.
-
 ```
 cfconfig datasource list
 cfconfig datasource list from=serverName
