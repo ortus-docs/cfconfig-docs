@@ -23,7 +23,7 @@ An example would be:
 /opt/lucee/lib/lucee-server/
 ```
 
-### Adobe 9/10/11/2016 CF home
+### Adobe 9/10/11/2016/2018 CF home
 The `cfusion` folder that contains the `lib/neo-runtime.xml` file.
 An example would be:
 ```
