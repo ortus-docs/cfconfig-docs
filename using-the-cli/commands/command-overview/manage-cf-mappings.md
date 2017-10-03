@@ -4,8 +4,6 @@ There are three commands to manage CF mappings.
 
 ## List all CF Mappings
 
-List all CF Mappings for a server.
-
 ```
 cfconfig cfmapping list
 cfconfig cfmapping list from=serverName
