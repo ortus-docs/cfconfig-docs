@@ -15,3 +15,7 @@ cfconfig import from=/path/to/.CFConfig.json to=/path/to/server/home toFormat=lu
 ```
 
 The version number can be left off `toFormat` and `fromFormat` when reading or writing to a CFConfig JSON file or a CommandBox server since we already know the version.  If you don't specify a Lucee web or Server context, we default to server. Use a format of `luceeWeb` to switch.
+
+```
+cfconfig import from=myConfig.json toFormat=luceeWeb
+```
