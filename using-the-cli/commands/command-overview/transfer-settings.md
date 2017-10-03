@@ -13,10 +13,11 @@ cfconfig transfer from=/path/to/server/home
 cfconfig transfer to=/path/to/server/home
 ```
 
+All the same rules for engine format and version apply.
 
-
+```
 cfconfig transfer from=/path/to/.CFConfig.json to=/path/to/server/home toFormat=luceeServer@5.1
+```
 
-The version number can be left off toFormat and fromFormat when reading or writing to a CFConfig JSON file or a CommandBox server since we already know the
-version.
-If you don't specify a Lucee web or Server context, we default to server. Use a format of "luceeWeb" to switch.
+The version number can be left off `toFormat` and `fromFormat` when reading or writing to a CFConfig JSON file or a CommandBox server since we already know the
+version.  If you don't specify a Lucee web or Server context, we default to server. Use a format of `luceeWeb` to switch.
