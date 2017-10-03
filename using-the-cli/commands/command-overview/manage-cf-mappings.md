@@ -28,5 +28,12 @@ cfconfig cfmapping save virtual=/foo physical=C:/foo/bar to=serverName
 cfconfig cfmapping save virtual=/foo physical=C:/foo/bar to=/path/to/server/home
 ```
 
-
 ## Delete a CF Mapping
+
+Identify the mapping uniquely by the virtual path.
+
+```
+cfconfig cfmapping delete /foo
+cfconfig cfmapping delete /foo serverName
+cfconfig cfmapping delete /foo /path/to/server/home
+```
