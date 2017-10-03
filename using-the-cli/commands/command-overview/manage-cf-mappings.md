@@ -18,9 +18,8 @@ To receive the data back as JSON, use the `--JSON` flag.
 cfconfig cfmapping list --JSON
 ```
 
-
-
-
 ## Edit an existing or create a new CF Mapping
+
+
 
 ## Delete a CF Mapping
