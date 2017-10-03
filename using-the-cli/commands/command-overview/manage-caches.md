@@ -2,7 +2,7 @@
 
 There are three commands to manage Lucee/Railo caches.
 
-## Listing existing caches
+## List existing caches
 
 List all caches for a server.
 
@@ -25,7 +25,7 @@ To receive the data back as JSON, use the --JSON flag.
 cfconfig cache list --JSON
 ```
 
-## Updating or creating a cache
+## Edit an existing or create a new cache
 
 Add a mew cache or update an existing cache.  Existing caches will be matched based on the name.  You can use a the `type` parameter as a shortcut for specifying the full Java class, which may change between versions.
 
@@ -50,7 +50,7 @@ If your cache provider expects custom properties, pass them as additional parame
 cfconfig cache save name=myCache type=RAM custom:timeToIdleSeconds=0 custom:timeToLiveSeconds=0
 ```
 
-## Deleting an existing cache
+## Delete an existing cache
 
 Identify the cache uniquely by the name.
 
