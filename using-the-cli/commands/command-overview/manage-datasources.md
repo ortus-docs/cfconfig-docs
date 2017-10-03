@@ -12,7 +12,7 @@ cfconfig datasource list from=serverName
 cfconfig datasource list from==/path/to/server/home
 ```
 
-To receive the data back as JSON, use the --JSON flag.
+To receive the data back as JSON, use the `--JSON` flag.
 
 ```
 cfconfig datasource list --JSON
