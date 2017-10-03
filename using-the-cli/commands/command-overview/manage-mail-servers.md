@@ -28,3 +28,10 @@ cfconfig mailserver save smtp=smtp.server.com to=/path/to/server/home
 
 ## Delete an existing mail server
 
+Identify the mail server uniquely by the host name.
+
+```
+cfconfig mailserver delete /foo
+cfconfig mailserver delete /foo serverName
+cfconfig mailserver delete /foo /path/to/server/home
+```
