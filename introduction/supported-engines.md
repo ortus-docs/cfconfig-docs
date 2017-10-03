@@ -7,7 +7,8 @@ If you don't have time for a pull request, please [enter a ticket](https://ortus
 Here's an overview of what's supported.
 
 - **Lucee 4.x/5.x** - Nearly complete.  Missing custom tags, debugging, REST mappings, error settings, component settings
-- **Adobe C2016** - Nearly complete.  
+- **Adobe CF2018** - Experimental
+- **Adobe CF2016** - Nearly complete.  
 - **Adobe CF11** - Nearly complete.  
 - **Adobe CF10** - No support yet
 - **Adobe CF9** - No support yet
