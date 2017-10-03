@@ -47,7 +47,7 @@ Format is specified as `engine@version` where:
 
 Possible engine values are:
 - **luceeWeb** - Lucee web context
-- **luceeServer** - Lucee server context
+- **luceeServer** - Lucee server context (Default for Lucee servers)
 - **adobe** - Adobe server
 - **railoWeb** - Railo web Context
 - **railoServer** - Railo server context
@@ -57,3 +57,11 @@ Here are some examples of server formats:
 - adobe@11.0.10
 - luceeServer@5
 - luceeWeb@4.5
+
+## Default format for Lucee
+
+If you are interacting with a Lucee CommandBox server and don't provide a format, CommandBox will automatically default to the `luceeServer` format which operates on the server context.  If you wish to interact with the web context (which has little distinction in a CommandBox server since there's only one web context per server) you will need to provide the explicit `luceeWeb` format.
+
+```
+cfconfig show fromFormat=luceeWeb
+```
