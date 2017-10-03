@@ -1,8 +1,11 @@
 # Manage Mail Servers
 
 There are three commands to manage Mail Servers.
-```
-cfconfig mailserver list
-cfconfig mailserver save smtp.mail.com
-cfconfig mailserver delete smtp.mail.com
-```
+
+## List existing mail servers
+
+
+
+## Edit an existing or create a new mail server
+
+## Delete an existing mail server
