@@ -2,8 +2,10 @@
 
 There are three commands to manage CF mappings.
 
-```
-cfconfig cfmapping list
-cfconfig cfmapping save /foo C:/foo
-cfconfig cfmapping delete /foo
-```
+## List all CF Mappings
+
+
+
+## Edit an existing or create a new CF Mapping
+
+## Delete a CF Mapping
