@@ -9,6 +9,7 @@ List all caches for a server.
 ```bash
 # Lucee server context of the CommandBox server in the current directory
 cfconfig cache list
+
 # Lucee web context of the CommandBox server in the current directory
 cfconfig cache list fromFormat=luceeWeb
 
