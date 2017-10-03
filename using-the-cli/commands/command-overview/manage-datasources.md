@@ -35,6 +35,12 @@ cfconfig datasource save name=myDS ... to=serverName
 cfconfig datasource save name=myDS ... to=/path/to/server/home
 ```
 
-
-
 ## Delete a datasource
+
+Identify the datasource uniquely by the name.
+
+```
+cfconfig datasource delete foo
+cfconfig datasource delete foo serverName
+cfconfig datasource delete foo /path/to/server/home
+```
