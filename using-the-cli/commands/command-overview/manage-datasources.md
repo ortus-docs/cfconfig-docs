@@ -30,9 +30,9 @@ Valid dbdriver options are
 - **MySQL**
 
 ```
-cfconfig datasource save myDS
-cfconfig datasource save name=myDS to=serverName
-cfconfig datasource save name=myDS to=/path/to/server/home
+cfconfig datasource save name=myDSN dbdriver=mysql host=localhost port=3306 database=myDB username=brad password=foobar
+cfconfig datasource save name=myDS ... to=serverName
+cfconfig datasource save name=myDS ... to=/path/to/server/home
 ```
 
 
