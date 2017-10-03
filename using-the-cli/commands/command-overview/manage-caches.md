@@ -13,9 +13,11 @@ cfconfig cache list
 # Lucee web context of the CommandBox server in the current directory
 cfconfig cache list fromFormat=luceeWeb
 
+# Target a CommandBox server by name
 cfconfig cache list from=serverName
 
-cfconfig cache list from==/path/to/server/home
+# Target an externally installed server
+cfconfig cache list from=/path/to/server/home
 ```
 
 To receive the data back as JSON, use the --JSON flag.
