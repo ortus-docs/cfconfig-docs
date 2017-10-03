@@ -13,22 +13,7 @@ cfconfig transfer from=/path/to/server/home
 cfconfig transfer to=/path/to/server/home
 ```
 
-When transfering configuration to or from a generic CFConfig JSON file, use the full path to the JSON file:
 
-```
-cfconfig transfer from=/path/to/.cfconfig.json
-cfconfig transfer to=/path/to/.cfconfig.json
-```
-
-For CommandBox servers, we'll get the engine/version out of CommandBox's metadata.  For non-CommandBox servers, you'll need to help me out by
-specifying what kind of file format to use.
-For the fromFormat and toFormat, use the name of the engine followed by @ and then the engine version like engine@version.
-For lucee, specify the web or sever context.  Valid engines are "luceeWeb", "luceeServer", and "adobe".
-For partial versions, the missing pieces will be interpreted as zeros.  Meaning adobe@11 is the same as adobe@11.0.0.
-Examples are:
-- adobe@11.0.11
-- luceeWeb@5
-- luceeServer@4.5
 
 cfconfig transfer from=/path/to/.CFConfig.json to=/path/to/server/home toFormat=luceeServer@5.1
 
