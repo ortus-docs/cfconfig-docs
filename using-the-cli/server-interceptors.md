@@ -6,5 +6,5 @@ This functionality only applies to servers that are started in CommandBox.  Exam
 
 You can use the CFConfig commands to manually import/export configuration on 'standard' CF installs, but these automatic interceptors here don't apply.  
 
-* [Server Start](/using-the-cli/server-interceptors/server-start.md) -- Import config automatically when the server stops
+* [Server Start](/using-the-cli/server-interceptors/server-start.md) -- Import config automatically when the server starts
 * [Server Stop](/using-the-cli/server-interceptors/server-stop.md) -- Optionally export config when the server stops
