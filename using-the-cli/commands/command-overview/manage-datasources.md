@@ -18,7 +18,7 @@ cfconfig datasource list --JSON
 
 ## Edit an existing or create a new datasource
 
-Add a mew datasource or update an existing datasource.  Existing datasources will be matched based on the name.
+Add a new datasource or update an existing datasource.  Existing datasources will be matched based on the name.
 Valid dbdriver options are
 - **MSSQL** -- SQL Server driver
 - **MSSQL2** -- jTDS driver
