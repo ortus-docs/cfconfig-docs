@@ -1,6 +1,6 @@
-# CFConfig CLI Command Overview
+# Command Overview
 
-Here's an overview of all the commands available to the CFConfig CLI.  There are sub pages for each of these commands with additional details.
+Here's an overview of all the commands available to the CFConfig CLI. There are sub pages for each of these commands with additional details.
 
 ## Manage All Configs
 
@@ -10,11 +10,11 @@ Extracts all configuration from a server to a location of your choice.
 
 ### `cfconfig import`
 
-Imports all configuration from a location of your choice into a server.  Like `export`, but spelled different.
+Imports all configuration from a location of your choice into a server. Like `export`, but spelled different.
 
 ### `cfconfig transfer`
 
-Moves all configuration from a location of your choice to another location of your choice.  Like `import` and `export` but pronounced different.
+Moves all configuration from a location of your choice to another location of your choice. Like `import` and `export` but pronounced different.
 
 ### `cfconfig diff`
 
@@ -85,3 +85,4 @@ Add or update a mail server by host.
 ### `cfconfig mailserver delete`
 
 Delete a mail server by host.
+

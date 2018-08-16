@@ -1,8 +1,10 @@
-# Summary
+# Table of contents
+
+* [Introduction](README.md)
 
 ## Introduction
 
-* [Introduction](README.md)
+* [Introduction](introduction/introduction.md)
 * [About This Book](introduction/about-this-book.md)
 * [Authors](introduction/authors.md)
 * [Overview](introduction/overview.md)
@@ -14,19 +16,19 @@
 
 * [Installation](using-the-cli/installation.md)
 * [Usage](using-the-cli/usage.md)
-* [CommandBox Server Interceptors](using-the-cli/server-interceptors.md)
-  * [Server Start](using-the-cli/server-interceptors/server-start.md)
-  * [Server Stop](using-the-cli/server-interceptors/server-stop.md)
-* [Command Overview](using-the-cli/commands/command-overview.md)
-  * [Export Settings](using-the-cli/commands/command-overview/cfconfig-export.md)
-  * [Import Settings](using-the-cli/commands/command-overview/import-settings.md)
-  * [Transfer Settings](using-the-cli/commands/command-overview/transfer-settings.md)
-  * [Diff Settings](using-the-cli/commands/command-overview/diff-settings.md)
-  * [Set/View Settings](using-the-cli/commands/command-overview/setview-a-setting.md)
-  * [Manage Datasources](using-the-cli/commands/command-overview/manage-datasources.md)
-  * [Manage CF Mappings](using-the-cli/commands/command-overview/manage-cf-mappings.md)
-  * [Manage Caches](using-the-cli/commands/command-overview/manage-caches.md)
-  * [Manage Mail Servers](using-the-cli/commands/command-overview/manage-mail-servers.md)
+* [CommandBox Server Interceptors](using-the-cli/commandbox-server-interceptors/README.md)
+  * [Server Start](using-the-cli/commandbox-server-interceptors/server-start.md)
+  * [Server Stop](using-the-cli/commandbox-server-interceptors/server-stop.md)
+* [Command Overview](using-the-cli/command-overview/README.md)
+  * [Export Settings](using-the-cli/command-overview/export-settings.md)
+  * [Import Settings](using-the-cli/command-overview/import-settings.md)
+  * [Transfer Settings](using-the-cli/command-overview/transfer-settings.md)
+  * [Diff Settings](using-the-cli/command-overview/diff-settings.md)
+  * [Set/View Settings](using-the-cli/command-overview/set-view-settings.md)
+  * [Manage Datasources](using-the-cli/command-overview/manage-datasources.md)
+  * [Manage CF Mappings](using-the-cli/command-overview/manage-cf-mappings.md)
+  * [Manage Caches](using-the-cli/command-overview/manage-caches.md)
+  * [Manage Mail Servers](using-the-cli/command-overview/manage-mail-servers.md)
 * [JSON File Storage](using-the-cli/json-file-storage.md)
 
 ## Using the Services

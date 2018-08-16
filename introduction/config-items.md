@@ -2,7 +2,7 @@
 
 Here's the list of settings that CFConfig can manage
 
-```js
+```javascript
 // One of the strings "never", "once", "always"
 name='inspectTemplate' type='string'
 // Number of templates to cache
@@ -213,3 +213,4 @@ name='ACF11Password' type='string'
 // hashed RDS password for Adobe CF11
 name='ACF11RDSPassword' type='string'
 ```
+
