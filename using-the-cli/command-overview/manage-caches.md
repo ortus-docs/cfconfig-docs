@@ -26,7 +26,7 @@ cfconfig cache list --JSON
 
 ## Edit an existing or create a new cache
 
-Add a mew cache or update an existing cache. Existing caches will be matched based on the name. You can use a the `type` parameter as a shortcut for specifying the full Java class, which may change between versions.
+Add a new cache or update an existing cache. Existing caches will be matched based on the name. You can use a the `type` parameter as a shortcut for specifying the full Java class, which may change between versions.
 
 ```text
 cfconfig cache save myCache RAM
