@@ -38,6 +38,6 @@
 ## Using the Services
 
 * [Installation](using-the-services/installation.md)
-* [Usage](using-the-services/usage.md)
+* [Component Overview](using-the-services/usage.md)
 * [API Overview](using-the-services/api-overview.md)
 
