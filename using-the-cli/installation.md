@@ -16,10 +16,17 @@ The only requirement for the CFConfig CLI is [CommandBox](https://commandbox.ort
 
 ## Updating CFConfig
 
-CFConfig is under active development and changing on a regular basis. To make sure you have the latest version installed, you can simply cd into the CFML home directory of your CommandBox install and use the regular package `update` command.
+CFConfig is under active development and changing on a regular basis. To make sure you have the latest version installed, you can simply cd into the CFML home directory of your CommandBox install and use the regular package `update` command.  This will pull in minor and patch updates but not major version changes.
 
 ```text
-cd `#expandpath /commandbox`
-update
+update --system
 ```
+
+If you have a pre-release version of CFConfig or need to upgrade to a new major version, use this command:
+
+```text
+install commandbox-cfconfig --force
+```
+
+
 

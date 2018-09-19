@@ -86,3 +86,75 @@ Add or update a mail server by host.
 
 Delete a mail server by host.
 
+## Manage Custom Tag Paths
+
+### `cfconfig customtagpath list`
+
+List all Custom Tag paths
+
+### `cfconfig customtagpath save`
+
+Save a Custom Tag path
+
+### `cfconfig customtagpath delete`
+
+Delete a Custom Tag path
+
+## Event Gateway Configuration
+
+### `cfconfig eventgatewayconfig list`
+
+List all Event Gateway Configurations
+
+### `cfconfig eventgatewayconfig save`
+
+Add or update an Event Gateway Configuration
+
+### `cfconfig eventgatewayconfig delete`
+
+Delete an Event Gateway Configuration
+
+## Event Gatway Instances
+
+### `cfconfig eventgatewayinstance list`
+
+List all Event Gatway Instances
+
+### `cfconfig eventgatewayinstance save`
+
+Add or update an Event Gatway Instance
+
+### `cfconfig eventgatewayinstance delete`
+
+Delete an Event Gatway Instance
+
+## Lucee Loggers
+
+### `cfconfig logger list`
+
+List all Lucee Loggers
+
+### `cfconfig logger save`
+
+Add or update a Lucee Logger
+
+### `cfconfig logger delete`
+
+Delete a Lucee Logger
+
+## Scheduled Tasks
+
+### `cfconfig task list`
+
+List all Scheduled Tasks
+
+### `cfconfig task save`
+
+Add or update a Scheduled Task
+
+### `cfconfig task delete`
+
+Delete a Scheduled Task
+
+
+

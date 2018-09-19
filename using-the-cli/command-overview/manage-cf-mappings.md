@@ -4,10 +4,10 @@ There are three commands to manage CF mappings.
 
 ## List all CF Mappings
 
-```text
+```bash
 cfconfig cfmapping list
 cfconfig cfmapping list from=serverName
-cfconfig cfmapping list from==/path/to/server/home
+cfconfig cfmapping list from=/path/to/server/home
 ```
 
 To receive the data back as JSON, use the `--JSON` flag.

@@ -29,6 +29,10 @@
   * [Manage CF Mappings](using-the-cli/command-overview/manage-cf-mappings.md)
   * [Manage Caches](using-the-cli/command-overview/manage-caches.md)
   * [Manage Mail Servers](using-the-cli/command-overview/manage-mail-servers.md)
+  * [Manage Event Gateway Configuration](using-the-cli/command-overview/manage-event-gateway-configuration.md)
+  * [Manage Event Gateway Instances](using-the-cli/command-overview/manage-event-gateway-instances.md)
+  * [Manage Lucee Loggers](using-the-cli/command-overview/manage-lucee-loggers.md)
+  * [Manage Scheduled Tasks](using-the-cli/command-overview/manage-scheduled-tasks.md)
 * [JSON File Storage](using-the-cli/json-file-storage.md)
 
 ## Using the Services
