@@ -1,6 +1,6 @@
 # Introduction
 
-## CFConfig Manual - Version 0.5.0 alpha
+## CFConfig Manual - Version 1.0.0
 
 ![CFConfig](.gitbook/assets/cfconfiglogo300.png)
 
