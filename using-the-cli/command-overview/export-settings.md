@@ -4,8 +4,8 @@ Export configuration from a server. If you don't specify a to, we look for a Com
 
 ```text
 cfconfig export myConfig.json
-cfconfig export serverNameToExportTo
-cfconfig export to=/path/to/server/home/to/export/to
+cfconfig export from=serverNameToExportFrom to=myconfig.json
+cfconfig export from=/path/to/server/home to=myconfig.json
 ```
 
 All the same rules for engine format and version apply.
