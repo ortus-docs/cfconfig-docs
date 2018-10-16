@@ -4,8 +4,8 @@ Import configuration to a server. If you don't specify a to, we look for a Comma
 
 ```text
 cfconfig import myConfig.json
-cfconfig import serverNameToImportFrom
-cfconfig import to=/path/to/server/home/to/import/from
+cfconfig import to=serverName from=myConfig.json
+cfconfig import to=/path/to/server/home from=myConfig.json
 ```
 
 All the same rules for engine format and version apply.
