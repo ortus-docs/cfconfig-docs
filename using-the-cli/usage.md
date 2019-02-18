@@ -1,27 +1,32 @@
 # Usage
 
-## Server Home
+## Specifying a Server Home
 
-There are 3 ways that CFConfig will determine the server\(s\) you would like it to operate on. Each command has a `to` and/or `from` parameter to specify this.
+CFConfig must determine the server\(s\) on which to operate, which will either be a web context or a server context. CFConfig will determine the server as follows:
 
-1. The current working directory if it is the web root for a CommandBox server.
-2. You provide the name of a previously-started CommandBox server
-3. You provide a file path to the CF home of the server
+1. By default, when the `to` or `from` parameters are not present, CFConfig will use the current working directory, assuming it is the web root for a CommandBox server
+2. You provide a file path to the CF home of the server using the `to` and/or `from` parameters
+3. You provide the name of a previously-started CommandBox server, using `to` and/or `from` parameters  (see [Commandbox Managing Servers](https://commandbox.ortusbooks.com/embedded-server/manage-servers))
 
-### Lucee 4/5 web CF home
+
+### Lucee 4/5 Web Context
 
 The folder containing the `lucee-web.xml.cfm` file. An example would be:
 
 ```text
-<webroot>/WEB-INF/lucee/
+<webroot>C:/myapp/WEB-INF/lucee/
+
+cfconfig export from=/WEB-INF/lucee/ to=myconfig.json
 ```
 
-### Lucee 4/5 server CF home
+### Lucee 4/5 Server Context
 
-Path to be the `lucee-server` folder containing the `/context/lucee-server.xml` file. An example would be:
+Path to the `lucee-server` folder containing the `/context/lucee-server.xml` file. An example would be:
 
 ```text
-/opt/lucee/lib/lucee-server/
+C:/lucee/tomcat/lucee-server/
+
+cfconfig export from=C:/lucee/tomcat/lucee-server/ to=myconfig.json
 ```
 
 ### Adobe 9/10/11/2016/2018 CF home
@@ -30,6 +35,14 @@ The `cfusion` folder that contains the `lib/neo-runtime.xml` file. An example wo
 
 ```text
 C:/ColdFusion11/cfusion/
+```
+
+### Embedded Commandbox Server
+
+If you run CFConfig from the web root of a Commandbox embedded server, you do not need to specicy the `from` or `to` parameters to reference it, but you will need to specify the `toFormat` or `fromFormat` parameters to reference either the Web or the Admin context. This example assumes you are running CFConfig from the web root of an embedded server:
+
+```text
+cfconfig import from=config_admin.json toFormat=luceeServer
 ```
 
 ### JSON File
