@@ -1,27 +1,32 @@
 # Usage
 
-## Server Home
+## Specifying a Server Home
 
-There are 3 ways that CFConfig will determine the server\(s\) you would like it to operate on. Each command has a `to` and/or `from` parameter to specify this.
+CFConfig must determine the server\(s\) on which to operate, which will either be a web context or a server context. CFConfig will determine the server as follows:
 
-1. The current working directory if it is the web root for a CommandBox server.
-2. You provide the name of a previously-started CommandBox server
-3. You provide a file path to the CF home of the server
+1. By default, when the `to` or `from` parameters are not present, CFConfig will use the current working directory, assuming it is the web root for an Embedded Commandbox Server (see below)
+2. You provide a file path to the server home by using the `to` and/or `from` parameters
+3. You provide the name of a previously-started CommandBox server, using `to` and/or `from` parameters  (see [Commandbox Managing Servers](https://commandbox.ortusbooks.com/embedded-server/manage-servers))
 
-### Lucee 4/5 web CF home
+
+### Lucee 4/5 Web Context
 
 The folder containing the `lucee-web.xml.cfm` file. An example would be:
 
 ```text
-<webroot>/WEB-INF/lucee/
+<webroot>C:/myapp/WEB-INF/lucee/
+
+cfconfig export from=C:/myapp/WEB-INF/lucee/ to=myconfig.json
 ```
 
-### Lucee 4/5 server CF home
+### Lucee 4/5 Server Context
 
-Path to be the `lucee-server` folder containing the `/context/lucee-server.xml` file. An example would be:
+Path to the `lucee-server` folder containing the `/context/lucee-server.xml` file. An example would be:
 
 ```text
-/opt/lucee/lib/lucee-server/
+C:/lucee/tomcat/lucee-server/
+
+cfconfig export from=C:/lucee/tomcat/lucee-server/ to=myconfig.json
 ```
 
 ### Adobe 9/10/11/2016/2018 CF home
@@ -34,7 +39,7 @@ C:/ColdFusion11/cfusion/
 
 ### JSON File
 
-Just provide the path to the JSON file. This is auto-deteced if the path ends in `.JSON`. An example would be:
+Just provide the path to the JSON file. This is auto-detected if the path ends in `.JSON`. An example would be:
 
 ```text
 C:/path/to/myConfig.json
@@ -64,11 +69,14 @@ Here are some examples of server formats:
 * luceeServer@5
 * luceeWeb@4.5
 
-## Default format for Lucee
+### Embedded Commandbox Server
 
-If you are interacting with a Lucee CommandBox server and don't provide a format, CommandBox will automatically default to the `luceeServer` format which operates on the server context. If you wish to interact with the web context \(which has little distinction in a CommandBox server since there's only one web context per server\) you will need to provide the explicit `luceeWeb` format.
+If you run CFConfig from the web root of a Commandbox embedded server, you do not need to specicy the `from` or `to` parameters to reference it, and CFConfig will automatically default to the `luceeServer` format, which operates on the server context. If you wish to interact with the web context \(which has little distinction in a CommandBox server since there's only one web context per server\) you will need to provide the explicit `luceeWeb` format by using either the `toFormat` or `fromFormat` parameters.
 
 ```text
 cfconfig show fromFormat=luceeWeb
-```
+``` This example assumes you are running CFConfig from the web root of an embedded server:
 
+```text
+cfconfig import from=config_admin.json toFormat=luceeWeb
+```
