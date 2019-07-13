@@ -112,7 +112,9 @@ name='perAppSettingsEnabled' type='boolean'
 name='useUUIDForCFToken' type='boolean'
 // True/false
 name='requestTimeoutInURL' type='boolean'
-// One of the strings "regular", "white-space", "white-space-pref"
+// One of the strings "off", "simple", "smart"
+// for Lucee backwards compat, you can use "regular", "white-space", "white-space-pref" which map to the above options in the same order.
+// Adobe only has on and off so "simple" and "smart" both just map to the fetaure being on.
 name='whitespaceManagement' type='string'
 // True/false
 name='compression' type='boolean'
