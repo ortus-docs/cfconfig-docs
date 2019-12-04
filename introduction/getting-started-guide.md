@@ -65,6 +65,7 @@ CommandBox> cfconfig transfer from=oneServer to=anotherServer
 ## Diff all the settings between two servers
 
 ```text
+CommandBox> cfconfig diff from=oneServer to=anotherServer
 CommandBox> cfconfig diff to=anotherServerName
 CommandBox> cfconfig diff to=anotherServerName --fromOnly
 CommandBox> cfconfig diff to=anotherServerName --toOnly
