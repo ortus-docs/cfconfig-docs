@@ -75,7 +75,9 @@ If you run CFConfig from the web root of a Commandbox embedded server, you do no
 
 ```text
 cfconfig show fromFormat=luceeWeb
-``` This example assumes you are running CFConfig from the web root of an embedded server:
+```
+
+This example assumes you are running CFConfig from the web root of an embedded server:
 
 ```text
 cfconfig import from=config_admin.json toFormat=luceeWeb
