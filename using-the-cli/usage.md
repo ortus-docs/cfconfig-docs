@@ -4,10 +4,9 @@
 
 CFConfig must determine the server\(s\) on which to operate, which will either be a web context or a server context. CFConfig will determine the server as follows:
 
-1. By default, when the `to` or `from` parameters are not present, CFConfig will use the current working directory, assuming it is the web root for an Embedded Commandbox Server (see below)
+1. By default, when the `to` or `from` parameters are not present, CFConfig will use the current working directory, assuming it is the web root for an Embedded Commandbox Server \(see below\)
 2. You provide a file path to the server home by using the `to` and/or `from` parameters
-3. You provide the name of a previously-started CommandBox server, using `to` and/or `from` parameters  (see [Commandbox Managing Servers](https://commandbox.ortusbooks.com/embedded-server/manage-servers))
-
+3. You provide the name of a previously-started CommandBox server, using `to` and/or `from` parameters  \(see [Commandbox Managing Servers](https://commandbox.ortusbooks.com/embedded-server/manage-servers)\)
 
 ### Lucee 4/5 Web Context
 
@@ -82,3 +81,4 @@ This example assumes you are running CFConfig from the web root of an embedded s
 ```text
 cfconfig import from=config_admin.json toFormat=luceeWeb
 ```
+

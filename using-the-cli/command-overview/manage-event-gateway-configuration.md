@@ -1,6 +1,6 @@
 # Manage Event Gateway Configuration
 
-Event Gateway Configurations are currently only supported for Adobe ColdFusion.  Please contact us if you'd like to sponsor this feature.
+Event Gateway Configurations are currently only supported for Adobe ColdFusion. Please contact us if you'd like to sponsor this feature.
 
 ## List all Event Gateway Configurations
 

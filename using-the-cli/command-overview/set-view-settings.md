@@ -4,8 +4,8 @@
 
 ```text
 cfconfig show
-cfconfig show serverName
-cfconfig show /path/to/server/install/home
+cfconfig show from=serverName
+cfconfig show from=/path/to/server/install/home
 ```
 
 ## View a specific configuration setting

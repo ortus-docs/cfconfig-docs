@@ -2,7 +2,7 @@
 
 ## CFConfig Manual - Version 0.5.0 alpha
 
-![CFConfig](../.gitbook/assets/cfconfiglogo300.png)
+![CFConfig](../.gitbook/assets/CfConfigLogo300.png)
 
 Welcome to the CFConfig Manual. CFConfig is a project aimed to help server admins and developers alike manage the configuration of their favorite CF engine.
 

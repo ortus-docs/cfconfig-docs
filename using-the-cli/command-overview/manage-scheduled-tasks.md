@@ -1,6 +1,6 @@
 # Manage Scheduled Tasks
 
-Scheduled tasks are currently only supported for Adobe ColdFusion.  Please contact us if you'd like to sponsor this feature.
+Scheduled tasks are currently only supported for Adobe ColdFusion. Please contact us if you'd like to sponsor this feature.
 
 ## List all Scheduled Tasks
 
