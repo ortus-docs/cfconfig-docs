@@ -1,6 +1,6 @@
 # Config Items
 
-CFConfig supports over 180 individual config items. Here's the list of settings that CFConfig can manage
+CFConfig supports over 200 individual config items. Here's the list of settings that CFConfig can manage
 
 ```javascript
 // One of the strings "never", "once", "always"
