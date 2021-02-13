@@ -30,7 +30,7 @@ CFconfig is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LICE
 
 ## Discussion & Help
 
-The CFconfig help and discussion group can be found here: [https://groups.google.com/a/ortussolutions.com/forum/\#!forum/commandbox](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox)
+The CFconfig help and discussion group can be found here: [https://groups.google.com/a/ortussolutions.com](https://community.ortussolutions.com/c/communities/)
 
 ## Reporting a Bug
 
