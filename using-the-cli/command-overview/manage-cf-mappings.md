@@ -18,7 +18,7 @@ cfconfig cfmapping list --JSON
 
 ## Edit an existing or create a new CF Mapping
 
-Add a mew CF mapping or update an existing CF Mapping. Existing mappings will be matched based on the virtual path.
+Add a new CF mapping or update an existing CF Mapping. Existing mappings will be matched based on the virtual path.
 
 ```text
 cfconfig cfmapping save /foo C:/foo/bar
