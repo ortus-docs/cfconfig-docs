@@ -8,6 +8,7 @@ Here's an overview of what's supported.
 
 * **Lucee 4.x**
 * **Lucee 5.x** 
+* **Adobe CF 2021**
 * **Adobe CF 2018**
 * **Adobe CF 2016**
 * **Adobe CF 11**
