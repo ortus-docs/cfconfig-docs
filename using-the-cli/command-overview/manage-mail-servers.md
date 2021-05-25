@@ -18,7 +18,7 @@ cfconfig mailserver list --JSON
 
 ## Edit an existing or create a new mail server
 
-Add a mew mail server or update an existing mail server. Existing mail servers will be matched based on the host name.
+Add a new mail server or update an existing mail server. Existing mail servers will be matched based on the host name.
 
 ```text
 cfconfig mailserver save smtp.server.com
