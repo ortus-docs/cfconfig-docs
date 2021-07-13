@@ -1,8 +1,8 @@
 # Supported Engines
 
- CFConfig covers most of the common settings you'll find in Adobe and Lucee servers. This includes datasources, CF Mappings, Lucee caches, mail servers, logging settings, debugging settings, event gateways \(Adobe\), scheduled tasks \(Adobe\), and custom tag paths.
+CFConfig covers most of the common settings you'll find in Adobe and Lucee servers. This includes datasources, CF Mappings, Lucee caches, mail servers, logging settings, debugging settings, event gateways \(Adobe\), scheduled tasks \(Adobe\), and custom tag paths.
 
- If you find a setting or feature which is not supported, please send a pull request.  If you don't have time for a pull request, please [enter a ticket](https://ortussolutions.atlassian.net/projects/CFCONFIG) so we can track remaining features.
+If you find a setting or feature which is not supported, please send a pull request. If you don't have time for a pull request, please [enter a ticket](https://ortussolutions.atlassian.net/projects/CFCONFIG) so we can track remaining features.
 
 Here's an overview of what's supported.
 
