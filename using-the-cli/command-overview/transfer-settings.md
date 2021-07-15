@@ -52,7 +52,7 @@ As the value is a regular expression, you can use backreferences like `\1` in yo
 This example would create env vars such as `DB_MYDSN_PASSWORD` where `MYDSN` is your actual datasource name.
 
 ```bash
-cfconfig tranfser to=.CFConfig.json replace:replace:datasources\.(.*)\.password=DB_\1_PASSWORD
+cfconfig tranfser to=.CFConfig.json replace:datasources\.(.*)\.password=DB_\1_PASSWORD
 ```
 
 Any valid regex is possible for some clever replacements. This example would create env vars such as `DB_MYDSN_PORT`, `DB_MYDSN_HOST`, and `DB_MDSN_DATABASE`

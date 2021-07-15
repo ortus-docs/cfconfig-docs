@@ -34,6 +34,7 @@
   * [Manage Lucee Loggers](using-the-cli/command-overview/manage-lucee-loggers.md)
   * [Manage Scheduled Tasks](using-the-cli/command-overview/manage-scheduled-tasks.md)
 * [JSON File Storage](using-the-cli/json-file-storage.md)
+* [Env Var Overrides](using-the-cli/env-var-overrides.md)
 
 ## Using the Services
 
