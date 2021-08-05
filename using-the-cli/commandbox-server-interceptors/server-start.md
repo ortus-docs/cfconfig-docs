@@ -61,7 +61,7 @@ If there is a `CFConfig` property in your `server.json` file, it will be used to
 "CFConfigPauseTasks": true
 ```
 
-Note, you would never need to use all the properties above at the same time.  The two top level ones are only supported for backwards compatibility.  For an Adobe server, or a Lucee server in which you only care about importing settings into the server context, you can just use `cfconfig.file` .  For a Lucee server in whcih you want to import settings into the server AND web context, you can use `cfconfig.server` and `cfconfig.web`.
+Note, you would never need to use all the properties above at the same time.  The two top level ones are only supported for backwards compatibility.  For an Adobe server, or a Lucee server in which you only care about importing settings into the server context, you can just use `cfconfig.file` .  For a Lucee server in which you want to import settings into the server AND web context, you can use `cfconfig.server` and `cfconfig.web`.
 
 ## Multiple JSON files
 
