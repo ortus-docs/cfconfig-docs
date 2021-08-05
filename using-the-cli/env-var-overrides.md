@@ -34,3 +34,18 @@ When you provide JSON, the `append` flag will be set to true when adding the con
 
 Overridden env vars will **not** be written to any `.cfconfig.json` file and will be lost when box stops. They will also take precedence and override any explicit settings already set.
 
+## Target a Lucee/Railo specific server/web context
+
+If you want to specify a setting via an env var that targets a web context, you can use the following conventions:
+
+```bash
+# Default (server context)
+cfconfig_requestTimeout=...
+
+# Force web context.  (On adobe, just loaded normally)
+cfconfig_web_requestTimeout=...
+
+# Force server context- same as default. (On adobe, just loaded normally)
+cfconfig_server_requestTimeout=...
+```
+
