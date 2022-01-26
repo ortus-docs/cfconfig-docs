@@ -7,7 +7,7 @@ There are three commands to manage datasources.
 ```text
 cfconfig datasource list
 cfconfig datasource list from=serverName
-cfconfig datasource list from==/path/to/server/home
+cfconfig datasource list from=/path/to/server/home
 ```
 
 To receive the data back as JSON, use the `--JSON` flag.
