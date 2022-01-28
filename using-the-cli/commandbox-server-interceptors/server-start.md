@@ -65,7 +65,7 @@ Note, you would never need to use all the properties above at the same time.  Th
 
 ## Multiple JSON files
 
-Since there are sevearl overlapping conventions, it's possible to have more than one JSON file.  For example, you could have a `cfconfigfile` environment variable set as well as a `cfconfig.file` key in your `server.json`.  In this case, BOTH JSON files will be imported.  When there are two more more JSON files being imported into the same web or server context, the first file will be an overwrite as usual and all subsequent files will be imported in "append" mode so they add to the settings in the previous file. 
+Since there are several overlapping conventions, it's possible to have more than one JSON file.  For example, you could have a `cfconfigfile` environment variable set as well as a `cfconfig.file` key in your `server.json`.  In this case, BOTH JSON files will be imported.  When there are two more more JSON files being imported into the same web or server context, the first file will be an overwrite as usual and all subsequent files will be imported in "append" mode so they add to the settings in the previous file. 
 
 ### `.cfconfig.json` File in Webroot
 
