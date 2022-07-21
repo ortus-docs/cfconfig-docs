@@ -125,8 +125,6 @@ name='bufferTagBodyOutput' type='boolean'
 // Key is datasource name, value is struct of properties
 name='datasources' type='struct'
 
-// Array of structs of properties.  Mail servers are uniquely identified by host
-name='mailServers' type='array'
 /**
  * Custom tags have no unique identifier.  In Adobe, there's a made up
  * "virtual" key of /WEB-INF/customtags(somenumber), but it's never shown
@@ -137,6 +135,17 @@ name='mailServers' type='array'
  */
 // Array of tag paths ( value struct of properties )
 name='customTagPaths' type='array'
+// True/false component path is cached and not resolved again
+name='customTagCachePaths' type='boolean'
+// List of extensions used for Custom Tags, in the order they are searched
+name='customTagExtensions" type='list'
+// True/false search in the caller directory for the custom tag
+name='customTagSearchLocal' type='boolean'
+// True/false search for custom tags in subdirectories
+name='customTagSearchSubdirectories' type='boolean'
+
+// Array of structs of properties.  Mail servers are uniquely identified by host
+name='mailServers' type='array'
 // Encoding to use for mail. Ex: UTF-8
 name='mailDefaultEncoding' type='string'
 // True/false enable mail spooling
