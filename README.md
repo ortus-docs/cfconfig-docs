@@ -2,7 +2,7 @@
 
 ## CFConfig Manual - Version 1.0.0
 
-![CFConfig](.gitbook/assets/CfConfigLogo300%20%281%29.png)
+![CFConfig](<images/CfConfigLogo300 (1).png>)
 
 Welcome to the CFConfig Manual. CFConfig is a project aimed to help server admins and developers alike manage the configuration of their favorite CF engine.
 
@@ -10,14 +10,14 @@ Welcome to the CFConfig Manual. CFConfig is a project aimed to help server admin
 
 CFconfig is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible. Releases will be numbered with the following format:
 
-```text
+```
 <major>.<minor>.<patch>.<buildID>
 ```
 
 And constructed with the following guidelines:
 
-* Breaking backward compatibility bumps the major \(and resets the minor and patch\)
-* New additions without breaking backward compatibility bumps the minor \(and resets the patch\)
+* Breaking backward compatibility bumps the major (and resets the minor and patch)
+* New additions without breaking backward compatibility bumps the minor (and resets the patch)
 * Bug fixes and misc changes bumps the patch
 
 ## License
@@ -30,11 +30,11 @@ CFconfig is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LICE
 
 ## Discussion & Help
 
-The CFconfig help and discussion group can be found here: [https://groups.google.com/a/ortussolutions.com/forum/\#!forum/commandbox](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox)
+The CFconfig help and discussion group can be found here: [https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox)
 
 ## Reporting a Bug
 
-We all make mistakes from time to time :\) So why not let us know about it and help us out. We also love pull requests, so please star us and fork us:
+We all make mistakes from time to time :) So why not let us know about it and help us out. We also love pull requests, so please star us and fork us:
 
 * [https://github.com/ortus-solutions/cfconfig](https://github.com/ortus-solutions/cfconfig)
 * [https://github.com/ortus-solutions/commandbox-cfconfig](https://github.com/ortus-solutions/commandbox-cfconfig)
@@ -42,7 +42,7 @@ We all make mistakes from time to time :\) So why not let us know about it and h
 
 ## Professional Open Source
 
-![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button.png)
+![Ortus Solutions, Corp](images/ortussolutions\_button.png)
 
 CFConfig is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 
@@ -57,7 +57,7 @@ CFConfig is a professional open source software backed by [Ortus Solutions, Corp
 ## Resources
 
 * Official Site: [http://www.ortussolutions.com/products/commandbox](http://www.ortussolutions.com/products/commandbox)
-* Source Code: 
+* Source Code:&#x20;
   * [https://github.com/ortus-solutions/commandbox-cfconfig](https://github.com/ortus-solutions/commandbox-cfconfig)
   * [https://github.com/ortus-solutions/cfconfig](https://github.com/ortus-solutions/cfconfig)
 * Bug Tracker: [https://ortussolutions.atlassian.net/browse/CFConfig](https://ortussolutions.atlassian.net/browse/CFConfig)
@@ -71,4 +71,3 @@ CFConfig is a professional open source software backed by [Ortus Solutions, Corp
 Because of His grace, this project exists. If you don't like this, then don't read it, its not for you.
 
 > "Therefore being justified by \*\*faith\*\*, we have peace with God through our Lord Jesus Christ: By whom also we have access by \*\*faith\*\* into this \*\*grace\*\* wherein we stand, and rejoice in hope of the glory of God." Romans 5:5
-

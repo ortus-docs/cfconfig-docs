@@ -1,6 +1,6 @@
 # Env Var Overrides
 
-Every [Config Setting](../introduction/config-items.md) can be overridden by convention by creating environment variables in the shell where you run `box`.  This is idea for Docker containers or CI builds were you want to easily set one-off settings and not require an entire JSON file.  You set set these as actual environment variables or [Java system properties of the CLI](https://commandbox.ortusbooks.com/usage/execution#ad-hoc-java-properties-for-the-cli).   Env vars are loaded AFTER any `.cfconfig.json` files have been loaded by convention and will override any settings in the JSON.  They are not case sensitive.  
+Every [Config Setting](../the-basics/config-items.md) can be overridden by convention by creating environment variables in the shell where you run `box`.  This is idea for Docker containers or CI builds were you want to easily set one-off settings and not require an entire JSON file.  You set set these as actual environment variables or [Java system properties of the CLI](https://commandbox.ortusbooks.com/usage/execution#ad-hoc-java-properties-for-the-cli).   Env vars are loaded AFTER any `.cfconfig.json` files have been loaded by convention and will override any settings in the JSON.  They are not case sensitive. &#x20;
 
 The var must start with the text `cfconfig_` and will be followed by the name of the setting.
 
@@ -48,4 +48,3 @@ cfconfig_web_requestTimeout=...
 # Force server context- same as default. (On adobe, just loaded normally)
 cfconfig_server_requestTimeout=...
 ```
-

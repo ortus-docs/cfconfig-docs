@@ -2,15 +2,14 @@
 
 * [Introduction](README.md)
 
-## Introduction
+## The Basics
 
-* [Introduction](introduction/introduction.md)
-* [About This Book](introduction/about-this-book.md)
-* [Authors](introduction/authors.md)
-* [Overview](introduction/overview.md)
-* [Getting Started Guide](introduction/getting-started-guide.md)
-* [Supported Engines](introduction/supported-engines.md)
-* [Config Items](introduction/config-items.md)
+* [About This Book](the-basics/about-this-book.md)
+* [Authors](the-basics/authors.md)
+* [Overview](the-basics/overview.md)
+* [Getting Started Guide](the-basics/getting-started-guide.md)
+* [Supported Engines](the-basics/supported-engines.md)
+* [Config Items](the-basics/config-items.md)
 
 ## Using the CLI
 
@@ -41,4 +40,3 @@
 * [Installation](using-the-services/installation.md)
 * [Component Overview](using-the-services/usage.md)
 * [API Overview](using-the-services/api-overview.md)
-

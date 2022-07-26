@@ -7,6 +7,11 @@ CFConfig supports over 200 individual config items. Here's the list of settings 
 name='inspectTemplate' type='string'
 // Number of templates to cache
 name='templateCacheSize' type='numeric'
+// Number of queries to keep in cache
+name='queryCacheSize' type='numeric'
+// true/false When checked, at server level internal cache is used to store cached queries. By default, cached queries are stored in QUERY region supported by Ehcache.
+// Adobe-only
+name='QueryInternalCacheEnabled' type='boolean'
 // True/false
 name='componentCacheEnabled' type='boolean'
 // True/false
@@ -24,11 +29,22 @@ name='scopeCascading' type='string'
 // True/false
 name='searchResultsets' type='boolean'
 
+name='baseComponent' type='string'
+
+// Charts can be cached either in memory or to disk. In memory caching is faster, but more memory intensive. (0 = memory cache, 1 = disk cache)
+name='chartCacheType' type='numeric'
+// Time-to-Live of each chart in seconds
+name='chartCacheTTL' type='numeric'
+// Maximum number of cached images
+name='chartCacheSize' type='numeric'
+// Disk cache location.  When caching to disk, specifies the directory in which to store the generated charts.
+name='chartCacheDiskLocation' type='string'
+
 // Ex: en_US
 name='thisLocale' type='string'
-// Ex:     America/Chicago
+// Ex: 	America/Chicago
 name='thisTimeZone' type='string'
-// Ex:     pool.ntp.org
+// Ex: 	pool.ntp.org
 name='timeServer' type='string'
 // true/false
 name='useTimeServer' type='boolean'
@@ -45,9 +61,9 @@ name='sessionType' type='string'
 // True/false
 name='mergeURLAndForm' type='boolean'
 // True/false
-name='applicationMangement' type='boolean'
+name='applicationManagement' type='boolean'
 // True/false
-name='sessionMangement' type='boolean'
+name='sessionManagement' type='boolean'
 // True/false
 name='clientManagement' type='boolean'
 // True/false
@@ -55,14 +71,17 @@ name='domainCookies' type='boolean'
 // True/false
 name='clientCookies' type='boolean'
 
-// Number of seconds
+// Cookie Timeout - Number of seconds
 name='sessionCookieTimeout' type='numeric'
 // True/false
 name='sessionCookieHTTPOnly' type='boolean'
 // True/false
 name='sessionCookieSecure' type='boolean'
-// True/false
+// Disable updating ColdFusion internal cookies using ColdFusion tags/functions - True/false
 name='sessionCookieDisableUpdate' type='boolean'
+// Cookie Samesite default value - Strict, Lax, None, or empty string
+name='sessionCookieSamesite' type='string'
+
 
 // One of the strings "classic", "modern"
 name='localScopeMode' type='string'
@@ -98,12 +117,27 @@ name='clientStorage' type='string'
 name='clientStoragePurgeInterval' type='numeric'
 // A struct of valid client storage locations including registry, cookie, and any configured datasources. Only used by Adobe.
 name='clientStorageLocations' type='struct'
+// TODO: Add functions/commands to manage this manually.
+
+// One of the strings "memory", "redis".  Adobe use only.
+name='sessionStorageLocation' type='string'
+// Passowrd for session storage.  Adobe use only.
+name='sessionStoragePassword' type='string'
+// Host for session storage.  Adobe use only.
+name='sessionStorageHost' type='string'
+// Timeout in ms for session storage.  Adobe use only.
+name='sessionStorageTimeout' type='numeric'
+// Port for session storage  Adobe use only.
+name='sessionStoragePort' type='numeric'
+
 
 // Timespan Ex: 0,5,30,0
 name='requestTimeout' type='string'
 // True/false
 name='requestTimeoutEnabled' type='boolean'
 
+// Blocked file extensions for CFFile uploads
+name='blockedExtForFileUpload' type='string'
 // "none", "all" or a comma-delimited list with some combination of "cgi", "cookie", "form", "url".
 name='scriptProtect' type='string'
 // True/false
@@ -125,6 +159,11 @@ name='bufferTagBodyOutput' type='boolean'
 // Key is datasource name, value is struct of properties
 name='datasources' type='struct'
 
+// Preserve single quotes (") in the SQL defined with the tag cfquery (Lucee only)
+name='datasourcePreserveSingleQuotes' type='boolean'
+
+// Array of structs of properties.  Mail servers are uniquely identified by host
+name='mailServers' type='array'
 /**
  * Custom tags have no unique identifier.  In Adobe, there's a made up
  * "virtual" key of /WEB-INF/customtags(somenumber), but it's never shown
@@ -135,17 +174,19 @@ name='datasources' type='struct'
  */
 // Array of tag paths ( value struct of properties )
 name='customTagPaths' type='array'
-// True/false component path is cached and not resolved again
-name='customTagCachePaths' type='boolean'
-// List of extensions used for Custom Tags, in the order they are searched
-name='customTagExtensions" type='list'
-// True/false search in the caller directory for the custom tag
-name='customTagSearchLocal' type='boolean'
-// True/false search for custom tags in subdirectories
-name='customTagSearchSubdirectories' type='boolean'
 
-// Array of structs of properties.  Mail servers are uniquely identified by host
-name='mailServers' type='array'
+// Search for custom tags in subdirectories. (Lucee only)
+name='customTagSearchSubdirectories' type='boolean'
+// Search in the caller directory for the custom tag. (Lucee only)
+name='customTagSearchLocal' type='boolean'
+//  component path is cached and not resolved again.  (Lucee only)
+name='customTagCachePaths' type='boolean'
+// These are the extensions used for Custom Tags, in the order they are searched.
+name='customTagExtensions' type='string'
+
+// Component search paths (Lucee only). Key is the name
+name='componentPaths' type='struct'
+
 // Encoding to use for mail. Ex: UTF-8
 name='mailDefaultEncoding' type='string'
 // True/false enable mail spooling
@@ -166,14 +207,20 @@ name='mailSignKeystorePassword' type='string'
 name='mailSignKeyAlias' type='string'
 // Password with which the private key is stored.
 name='mailSignKeyPassword' type='string'
-
+// true/false Log all mail messages sent by ColdFusion.  Select this check box to save the To, From, and Subject fields of messages to a log file.
+name='mailLogEnabled' type='boolean'
+// Error Log Severity. Select the type of SMTP-related error messages to log.
+// One of the strings "debug", "information", "warning", "error"
+name='mailLogSeverity' type='string'
+// Number of mail delivery threads
+name='mailMaxThreads' type='numeric'
 
 
 // Key is virtual path, value is struct of properties
 name='CFMappings' type='struct'
 // Key is log name, value is struct of properties
 name='loggers' type='struct'
-// True/false
+// Enable HTTP status codes.  ColdFusion sets an error status code of 404 if the template is not found and an error status code of 500 for server errors.
 name='errorStatusCode' type='boolean'
 // True/false
 name='disableInternalCFJavaComponents' type='boolean'
@@ -214,6 +261,9 @@ name='ORMSearchIndexDirectory' type='string'
 name='CFFormScriptDirectory' type='string'
 // Your Google maps API key
 name='googleMapKey' type='string'
+
+// Your Lucee API key (Lucee doesn't use it, but ForgeBox will since it's passed to extension providers)
+name='APIKey' type='string'
 
 // True/false
 name='serverCFCEenabled' type='boolean'
@@ -262,6 +312,9 @@ name='requestQueueTimeoutPage' type='string'
 // Key is cache connection name, value is struct of properties
 name='caches' type='struct'
 
+// Array of extension provider URLs (strings)
+name='extensionProviders' type='array'
+
 // name of default Object cache connection
 name='cacheDefaultObject' type='string'
 // name of default function cache connection
@@ -292,12 +345,34 @@ name='lineDebuggerMaxSessions' type='numeric'
 name='robustExceptionEnabled' type='boolean'
 // Enable Ajax debugging window (Adobe only)
 name='ajaxDebugWindowEnabled' type='boolean'
-// Enable Request Debugging Output
+// "Enable Request Debugging Output" in Adobe / "Enable debugging" in Lucee
 name='debuggingEnabled' type='boolean'
 // Remote DOM Inspection Settings
 name='weinreRemoteInspectionEnabled' type='boolean'
 // Report Execution Times
 name='debuggingReportExecutionTimes' type='boolean'
+
+// Database Activity - Select this option to log the database activity for the SQL Query events and Stored Procedure events. - Lucee only
+name='debuggingDBEnabled' type='boolean'
+// Exceptions - Select this option to log all exceptions raised for the request. - Lucee only
+name='debuggingExceptionsEnabled' type='boolean'
+// Query Usage - Select this option to log the query usage information. - Lucee only
+name='debuggingQueryUsageEnabled' type='boolean'
+// Tracing -Select this option to log trace event information. Tracing lets a developer track program flow and efficiency through the use of the CFTRACE tag.  - Lucee only
+name='debuggingTracingEnabled' type='boolean'
+// Dump - Select this option to enable output produced with help of the tag cfdump and send to debugging. - Lucee only
+name='debuggingDumpEnabled' type='boolean'
+// Timer - Select this option to show timer event information. Timers let a developer track the execution time of the code between the start and end tags of the CFTIMER tag. - Lucee only
+name='debuggingTimerEnabled' type='boolean'
+// Implicit variable Access - Select this option to log all accesses to scopes, queries and threads that happens implicit (cascaded). - Lucee only
+name='debuggingImplicitVariableAccessEnabled' type='boolean'
+
+// Maximum Logged Requests - Lucee only
+name='debuggingMaxLoggedRequests' type='numeric'
+
+
+// Debugging Templates - Lucee only
+name='debuggingTemplates' type='struct'
 
 // Debugging Highlight templates taking longer than the following ms
 name='debuggingReportExecutionTimesMinimum' type='numeric'
@@ -357,6 +432,37 @@ name='dotNetInstallDir' type='string'
 // Protocol for the .NET services.  Possible options: TCP, ??
 name='dotNetProtocol' type='string'
 
+// Log directory
+name='logDirectory' type='string'
+// Maximum file size  (In KB)
+name='logMaxFileSize' type='numeric'
+// Maximum number of archives
+name='logMaxArchives' type='numeric'
+// Log slow pages taking longer than
+name='logSlowRequestsEnabled' type='boolean'
+// Number of seconds threshold for logging slow pages
+name='logSlowRequestsThreshold' type='numeric'
+// Log all CORBA calls
+name='logCORBACalls' type='boolean'
+// Adobe && UNIX ONLY - Use operating system logging facilities
+name='logSysLogEnabled' type='boolean'
+
+// Array of disabled log file names (Adobe CF only)
+name='logFilesDisabled' type='array'
+
+// PDF Service Managers (Adobe CF only)
+name='PDFServiceManagers' type='struct'
+
+// TODO:
+//name='externalizeStrings' type='string'
+//name='restMappings' type='array'
+//name='componentBase' type='string'
+//name='componentAutoImport' type='string'
+//name='componentSearchLocal' type='boolean'
+//name='componentImplicitNotation' type='boolean'
+//name='cfxTags' type='string'
+
+
 // Enable logging for scheduled tasks
 name='schedulerLoggingEnabled' type='boolean'
 name='schedulerClusterDatasource' type='string'
@@ -371,6 +477,9 @@ name='eventGatewayMaxQueueSize' type='numeric'
 name='eventGatewayThreadpoolSize' type='numeric'
 // Event Gateways > Gateway Instances
 name='eventGatewayInstances' type='array'
+// Services > Event Gateway - Lucee specific
+// Lucee and Adobe event gateways are very different and cannot be transfered between engines.  As such, they are stored separately
+name='eventGatewaysLucee' type='struct'
 // Event Gateways > Gateway Types
 name='eventGatewayConfigurations' type='array'
 
@@ -423,6 +532,13 @@ name='adminRootUserID' type='string'
 name='adminAllowConcurrentLogin' type='boolean'
 // Enable sandbox security
 name='sandboxEnabled' type='boolean'
+
+// define the access for reading data from the admin. One of the strings open, closed, or protected
+name='adminAccessWrite' type='string'
+// define the access for writing data from the admin. One of the strings open, closed, or protected
+name='adminAccessRead' type='string'
+
+
 // List of allowed IPs for exposed services.  Formatted like 1.2.3.4,5.6.7.*
 name='servicesAllowedIPList' type='string'
 // List of allowed IPs for admin access.  Formatted like 1.2.3.4,5.6.7.*
@@ -430,15 +546,48 @@ name='adminAllowedIPList' type='string'
 // Enable secure profile.  Note, fipping this flag doesn't actually change any of the security settings.  It really just tracks the fact that you've enabled it at some point.
 name='secureProfileEnabled' type='boolean'
 
+// System output streams - Lucee only
+// values are strings indicating target stream (default,null,class:<class>,file:<file>)
+name='systemOut' type='string'
+name='systemErr' type='string'
+
+// TODO: adminUsers array (AuthorizedUsers)
+// TODO: sandboxes (contexts)
+
 // License key (only used for Adobe)
 name='license' type='string'
 // Previous license key (required for an upgrade license key)
 name='previousLicense' type='string'
+
+
+// TODO: Figure out what hashing algorithms each version of ACF use, and share the
+// same setting so the hashes passwords are as portable as possible
 
 // hashed admin password for Adobe CF11
 // TODO: Need to get 10, 11, 2016, and 2018 ironed out here.
 name='ACF11Password' type='string'
 // hashed RDS password for Adobe CF11
 name='ACF11RDSPassword' type='string'
-```
 
+// Automatically Check for Updates. Select to automatically check for updates at every login.
+name='updateCheckOnLoginEnable' type='boolean'
+// Check for updates every X days Enable
+name='updateCheckOnScheduleEnable' type='boolean'
+// Number of days between updates
+name='updateCheckOnScheduleDays' type='numeric'
+// If updates are available, send email notification to (comma-delimited list)
+name='updateCheckOnScheduleToAddress' type='string'
+// If updates are available, send email notification from
+name='updateCheckOnScheduleFromAddress' type='string'
+// Update site URL
+name='updateSiteURL' type='string'
+// Update check proxy host
+name='updateProxyHost' type='string'
+// Update check proxy port
+name='updateProxyPort' type='numeric'
+// Update check proxy username
+name='updateProxyUsername' type='string'
+// Update check proxy password
+name='updateProxyPassword' type='string'
+
+```
