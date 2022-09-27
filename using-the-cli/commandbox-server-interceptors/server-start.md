@@ -12,7 +12,7 @@ Here are the locations CFConfig will look for a JSON file and the order it will 
 
 If an environment variable exists with the name `CFConfigFile`, `CFConfigWeb`, or `CFConfigServer` it will be used as an absolute path to the JSON file or a relative path in relation to the web root.. An example of setting this in Windows would be:
 
-```text
+```
 C:/> SETX cfconfigfile "C:/path/to/myConfig.json"
 C:/> SETX cfconfigweb "C:/path/to/myConfig-web.json"
 C:/> SETX cfconfigserver "C:/path/to/myConfig-server.json"
@@ -20,7 +20,7 @@ C:/> SETX cfconfigserver "C:/path/to/myConfig-server.json"
 
 And on Unix...
 
-```text
+```
 $> cfconfigfile=C:/path/to/myConfig.json
 $> cfconfigweb=C:/path/to/myConfig-web.json
 $> cfconfigserver=C:/path/to/myConfig-server.json
@@ -31,7 +31,7 @@ $> export cfconfigserver
 
 _Note: CommandBox won't pick up new environment variables in Windows until you close and reopen the shell._
 
-It's not necessary to use `cfconfigfile` and `cfconfigsever` at the same time since they do the same thing.  They are both provided for consistency.  If you use both, they will all be imported!
+It's not necessary to use `cfconfigfile` and `cfconfigsever` at the same time since they do the same thing. They are both provided for consistency. If you use both, they will all be imported!
 
 Technically, you can also use one of the following env vars to do the same thing since CommandBox supports a generic syntax to override any `server.json` property, but given the options above, it's not necessary to use these unless you want to or specifically want to override the settings in the `server.json`.
 
@@ -43,7 +43,7 @@ box_server_cfconfig_server=settings.json
 
 ### `server.json` properties
 
-If there is a `CFConfig` property in your `server.json` file, it will be used to help control how your JSON configs are imported.  All JSON file paths can be absolute or relative paths from the folder the `server.json` lives in.
+If there is a `CFConfig` property in your `server.json` file, it will be used to help control how your JSON configs are imported. All JSON file paths can be absolute or relative paths from the folder the `server.json` lives in.
 
 ```javascript
 "cfconfig" : {
@@ -61,19 +61,36 @@ If there is a `CFConfig` property in your `server.json` file, it will be used to
 "CFConfigPauseTasks": true
 ```
 
-Note, you would never need to use all the properties above at the same time.  The two top level ones are only supported for backwards compatibility.  For an Adobe server, or a Lucee server in which you only care about importing settings into the server context, you can just use `cfconfig.file` .  For a Lucee server in which you want to import settings into the server AND web context, you can use `cfconfig.server` and `cfconfig.web`.
+Note, you would never need to use all the properties above at the same time. The two top level ones are only supported for backwards compatibility. For an Adobe server, or a Lucee server in which you only care about importing settings into the server context, you can just use `cfconfig.file` . For a Lucee server in which you want to import settings into the server AND web context, you can use `cfconfig.server` and `cfconfig.web`.
+
+### ModCFML Support for Lucee Contexts
+
+If you are using CommandBox's ModCFML support with Lucee, there can be a different set of settings for each Lucee web context.  By default, all "web" settings will load into the web context that corresponds with the default CommandBox web root for the server.  You can specify a JSON file for each web context in your `server.json` like so
+
+```json
+{
+    "cfconfig":{
+        "server":".cfconfig-server.json",
+        "web-/path/to/webroot/site1":".cfconfig-web-site1.json",
+        "web-/path/to/webroot/site2":".cfconfig-web-site2.json",
+        "web-/path/to/webroot/site3":".cfconfig-web-site3.json"
+    }
+}
+```
+
+The path to the web root as Lucee sees it is appended to the `web` key after a hypen (`-`).  CFConfig will pre-emptively create the web context folders based on the hash of the web root.&#x20;
 
 ## Multiple JSON files
 
-Since there are several overlapping conventions, it's possible to have more than one JSON file.  For example, you could have a `cfconfigfile` environment variable set as well as a `cfconfig.file` key in your `server.json`.  In this case, BOTH JSON files will be imported.  When there are two more more JSON files being imported into the same web or server context, the first file will be an overwrite as usual and all subsequent files will be imported in "append" mode so they add to the settings in the previous file. 
+Since there are several overlapping conventions, it's possible to have more than one JSON file. For example, you could have a `cfconfigfile` environment variable set as well as a `cfconfig.file` key in your `server.json`. In this case, BOTH JSON files will be imported. When there are two more more JSON files being imported into the same web or server context, the first file will be an overwrite as usual and all subsequent files will be imported in "append" mode so they add to the settings in the previous file.
 
 ### `.cfconfig.json` File in Webroot
 
-if and ONLY IF no other settings \(env vars, or `server.json` properties\) are found to specify a JSON file to import, CFConfig will look for the following files in the web root by convention.
+if and ONLY IF no other settings (env vars, or `server.json` properties) are found to specify a JSON file to import, CFConfig will look for the following files in the web root by convention.
 
 * `.cfconfig.json` - Use this for Adobe or for Lucee's server context
 * `.cfconfig-web.json` Use this for the Lucee web context
-* `.cfconfig-server.json` Use this for the Lucee server context \(same as `.cfconfig.json` \)
+* `.cfconfig-server.json` Use this for the Lucee server context (same as `.cfconfig.json` )
 
 If the only convention file found for an Adobe server is `.cfconfig-web.json` or `.cfconfig-server.json`, it will still be used but just imported into Adobe's single context.
 
@@ -87,13 +104,13 @@ When a server starts up, all environment variables will be looped over, and all 
 
 Here's an example of what setting that up on Windows might look like:
 
-```text
+```
 C:/> SETX cfconfig_adminPassword "myCoolPass123"
 ```
 
 And on Unix...
 
-```text
+```
 $> cfconfig_adminPassword=myCoolPass123
 $> export cfconfig_adminPassword
 ```
@@ -114,5 +131,4 @@ This only applies to the auto server start interceptors documented on this page.
 
 ## Production Password Protection
 
-On both Lucee and Adobe servers, when the server profile is set to `production`, CFConfig will not allow your sever to start with an empty password or with the Adobe default password of `commandbox`.  If any of those scenarios are detection in a `production` profile, CFConfig will set a random password and output it in the verbose console logs for you to refer to later.
-
+On both Lucee and Adobe servers, when the server profile is set to `production`, CFConfig will not allow your sever to start with an empty password or with the Adobe default password of `commandbox`. If any of those scenarios are detection in a `production` profile, CFConfig will set a random password and output it in the verbose console logs for you to refer to later.
