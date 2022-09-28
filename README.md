@@ -30,7 +30,7 @@ CFconfig is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LICE
 
 ## Discussion & Help
 
-The CFconfig help and discussion group can be found here: [https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox)
+The CFconfig help and discussion group can be found here: [https://community.ortussolutions.com/c/communities/commandbox/](https://community.ortussolutions.com/c/communities/commandbox/)
 
 ## Reporting a Bug
 
@@ -64,7 +64,7 @@ CFConfig is a professional open source software backed by [Ortus Solutions, Corp
 * Twitter: [@ortussolutions](http://www.twitter.com/ortussolutions)
 * Facebook: [https://www.facebook.com/ortussolutions](https://www.facebook.com/ortussolutions)
 * Google+: [https://google.com/+OrtusSolutions](https://google.com/+OrtusSolutions)
-* Vimeo Channel: [http://vimeo.com/channels/commandbox](http://vimeo.com/channels/commandbox)
+* Vimeo Channel: [https://www.cfcasts.com/series/cf-config/](https://www.cfcasts.com/series/cf-config/) (as well as older videos at [http://vimeo.com/channels/commandbox](http://vimeo.com/channels/commandbox))
 
 ### HONOR GOES TO GOD ABOVE ALL
 
