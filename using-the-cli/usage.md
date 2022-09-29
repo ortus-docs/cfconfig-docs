@@ -28,7 +28,7 @@ C:/lucee/tomcat/lucee-server/
 cfconfig export from=C:/lucee/tomcat/lucee-server/ to=myconfig.json
 ```
 
-### Adobe 9/10/11/2016/2018 CF home
+### Adobe 9/10/11/2016/2018/2021 CF home
 
 The `cfusion` folder that contains the `lib/neo-runtime.xml` file. An example would be:
 
@@ -70,7 +70,7 @@ Here are some examples of server formats:
 
 ### Embedded Commandbox Server
 
-If you run CFConfig from the web root of a Commandbox embedded server, you do not need to specicy the `from` or `to` parameters to reference it, and CFConfig will automatically default to the `luceeServer` format, which operates on the server context. If you wish to interact with the web context (which has little distinction in a CommandBox server since there's only one web context per server) you will need to provide the explicit `luceeWeb` format by using either the `toFormat` or `fromFormat` parameters.
+If you run CFConfig from the web root of a Commandbox embedded server, you do not need to specify the `from` or `to` parameters to reference it, and CFConfig will automatically default to the `luceeServer` format, which operates on the server context. If you wish to interact with the web context (which has little distinction in a CommandBox server since there's only one web context per server) you will need to provide the explicit `luceeWeb` format by using either the `toFormat` or `fromFormat` parameters.
 
 ```
 cfconfig show fromFormat=luceeWeb
