@@ -114,19 +114,19 @@ Add or update an Event Gateway Configuration
 
 Delete an Event Gateway Configuration
 
-## Event Gatway Instances
+## Event Gateway Instances
 
 ### `cfconfig eventgatewayinstance list`
 
-List all Event Gatway Instances
+List all Event Gateway Instances
 
 ### `cfconfig eventgatewayinstance save`
 
-Add or update an Event Gatway Instance
+Add or update an Event Gateway Instance
 
 ### `cfconfig eventgatewayinstance delete`
 
-Delete an Event Gatway Instance
+Delete an Event Gateway Instance
 
 ## Lucee Loggers
 
