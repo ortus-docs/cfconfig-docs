@@ -11,7 +11,7 @@
 
 ## Overview
 
-CFConfig gives you the ability to manage most every setting that shows up in the web administrator, but instead of logging into a web interface, you can mange it from the command line by hand or as part of a scripted server setup. You can seamless transfer config for all the following:
+CFConfig gives you the ability to manage most every setting that shows up in the web administrator, but instead of logging into a web interface, you can manage it from the command line by hand or as part of a scripted server setup. You can seamless transfer config for all the following:
 
 * CF Mappings
 * Datasources
