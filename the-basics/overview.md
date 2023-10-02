@@ -56,7 +56,7 @@ The CFConfig services do not require CommandBox, but can be used on its own and 
 
 ### CFConfig CLI
 
-The CLI portion of CFConfig warps up the services layer into a CommandBox module that provides command line access to all the features above, but from your native OS shell, bash scripts, automations, or Docker/Vagrant/Heroku provisioners.
+The CLI portion of CFConfig wraps up the services layer into a CommandBox module that provides command line access to all the features above, but from your native OS shell, bash scripts, automations, or Docker/Vagrant/Heroku provisioners.
 
 The CFConfig CLI also has a deep integration with CommandBox servers making it very easy to manage their configuration.
 
