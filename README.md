@@ -2,13 +2,13 @@
 
 ## CFConfig Manual - Version 1.0.0
 
-![CFConfig](<.gitbook/assets/CfConfigLogo300 (1).png>)
+![CFConfig](images/CfConfigLogo300.png)
 
-Welcome to the CFConfig Manual. CFConfig is a project aimed to help server admins and developers alike manage the configuration of their favorite CF engine.
+Welcome to the CFConfig Manual. CFConfig is a project aimed at helping server admins and developers alike manage the configuration of their favorite CF engine.
 
 ## Versioning
 
-CFconfig is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible. Releases will be numbered with the following format:
+CFconfig is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible. Releases will be numbered in the following format:
 
 ```
 <major>.<minor>.<patch>.<buildID>
@@ -34,7 +34,7 @@ The CFconfig help and discussion group can be found here: [https://community.ort
 
 ## Reporting a Bug
 
-We all make mistakes from time to time :) So why not let us know about it and help us out. We also love pull requests, so please star us and fork us:
+We all make mistakes from time to time :) So why not let us know about it and help us out? We also love pull requests, so please star us and fork us:
 
 * [https://github.com/ortus-solutions/cfconfig](https://github.com/ortus-solutions/cfconfig)
 * [https://github.com/ortus-solutions/commandbox-cfconfig](https://github.com/ortus-solutions/commandbox-cfconfig)
@@ -68,6 +68,6 @@ CFConfig is a professional open source software backed by [Ortus Solutions, Corp
 
 ### HONOR GOES TO GOD ABOVE ALL
 
-Because of His grace, this project exists. If you don't like this, then don't read it, its not for you.
+Because of His grace, this project exists. If you don't like this, don't read it; it's not for you.
 
 > "Therefore being justified by \*\*faith\*\*, we have peace with God through our Lord Jesus Christ: By whom also we have access by \*\*faith\*\* into this \*\*grace\*\* wherein we stand, and rejoice in hope of the glory of God." Romans 5:5
