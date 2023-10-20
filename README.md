@@ -2,7 +2,7 @@
 
 ## CFConfig Manual - Version 1.0.0
 
-![CFConfig](<images/CfConfigLogo300 (1).png>)
+![CFConfig](<.gitbook/assets/CfConfigLogo300 (1).png>)
 
 Welcome to the CFConfig Manual. CFConfig is a project aimed to help server admins and developers alike manage the configuration of their favorite CF engine.
 
@@ -42,7 +42,7 @@ We all make mistakes from time to time :) So why not let us know about it and he
 
 ## Professional Open Source
 
-![Ortus Solutions, Corp](images/ortussolutions\_button.png)
+![Ortus Solutions, Corp](.gitbook/assets/ortussolutions\_button.png)
 
 CFConfig is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 
@@ -57,7 +57,7 @@ CFConfig is a professional open source software backed by [Ortus Solutions, Corp
 ## Resources
 
 * Official Site: [http://www.ortussolutions.com/products/commandbox](http://www.ortussolutions.com/products/commandbox)
-* Source Code:&#x20;
+* Source Code:
   * [https://github.com/ortus-solutions/commandbox-cfconfig](https://github.com/ortus-solutions/commandbox-cfconfig)
   * [https://github.com/ortus-solutions/cfconfig](https://github.com/ortus-solutions/cfconfig)
 * Bug Tracker: [https://ortussolutions.atlassian.net/browse/CFConfig](https://ortussolutions.atlassian.net/browse/CFConfig)
