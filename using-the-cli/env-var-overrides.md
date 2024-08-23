@@ -1,14 +1,14 @@
 # Env Var Overrides
 
-Every [Config Setting](../the-basics/config-items.md) can be overridden by convention by creating environment variables in the shell where you run `box`.  This is ideal for Docker containers or CI builds where you want to easily set one-off settings and not require an entire JSON file.  You can set these as actual environment variables or [Java system properties of the CLI](https://commandbox.ortusbooks.com/usage/execution#ad-hoc-java-properties-for-the-cli).   Env vars are loaded AFTER any `.cfconfig.json` files have been loaded by convention and will override any settings in the JSON.  They are not case-sensitive. &#x20;
+Every [Config Setting](../the-basics/config-items.md) can be overridden by convention by creating environment variables in the shell where you run `box`. This is ideal for Docker containers or CI builds where you want to easily set one-off settings and not require an entire JSON file. You can set these as actual environment variables or [Java system properties of the CLI](https://commandbox.ortusbooks.com/usage/execution#ad-hoc-java-properties-for-the-cli). Env vars are loaded AFTER any `.cfconfig.json` files have been loaded by convention and will override any settings in the JSON. They are not case-sensitive.
 
-The var must start with the text `cfconfig_` and will be followed by the name of the setting.
+The variable must start with the text `cfconfig_` and will be followed by the name of the setting.
 
 ```bash
 cfconfig_adminPassword=myPass
 ```
 
-For nested settings inside of a struct or array you can use underscores to represent dots.  Note the following will error if there is not already a datasource named `myDSN` in the server.
+For nested settings inside a struct or array, you can use underscores to represent dots. Note the following will error if there is not already a datasource named `myDSN` in the server.
 
 ```bash
 cfconfig_datasources_myDSN_password=myPass

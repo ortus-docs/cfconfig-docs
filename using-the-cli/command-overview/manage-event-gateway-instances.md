@@ -10,7 +10,7 @@ cfconfig eventgatewayinstance list from=serverName
 cfconfig eventgatewayinstance list from=/path/to/server/home
 ```
 
-To receive the data back as JSON, use the --JSON flag.
+To receive the data back as JSON, use the `--JSON` flag.
 
 ```text
 cfconfig eventgatewayinstance list --JSON

@@ -8,7 +8,7 @@ Welcome to the CFConfig Manual. CFConfig is a project aimed at helping server ad
 
 ## Versioning
 
-CFconfig is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible. Releases will be numbered in the following format:
+CFConfig is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible. Releases will be numbered in the following format:
 
 ```
 <major>.<minor>.<patch>.<buildID>
@@ -22,15 +22,15 @@ And constructed with the following guidelines:
 
 ## License
 
-CFconfig is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/lgpl.html)
+CFConfig is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/lgpl.html)
 
 * Copyright by Ortus Solutions, Corp
 
-> **Info** The CFconfig Websites, Documentation, logo and content have a separate license and they are a separate entity.
+> **Info** The CFConfig Websites, Documentation, logo and content have a separate license and they are a separate entity.
 
 ## Discussion & Help
 
-The CFconfig help and discussion group can be found here: [https://community.ortussolutions.com/c/communities/commandbox/](https://community.ortussolutions.com/c/communities/commandbox/)
+The CFConfig help and discussion group can be found here: [https://community.ortussolutions.com/c/communities/commandbox/](https://community.ortussolutions.com/c/communities/commandbox/)
 
 ## Reporting a Bug
 
@@ -42,9 +42,9 @@ We all make mistakes from time to time :) So why not let us know about it and he
 
 ## Professional Open Source
 
-![Ortus Solutions, Corp](.gitbook/assets/ortussolutions\_button.png)
+![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button.png)
 
-CFConfig is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
+CFConfig is professional open-source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 
 * Custom Development
 * Professional Support & Mentoring
@@ -70,4 +70,4 @@ CFConfig is a professional open source software backed by [Ortus Solutions, Corp
 
 Because of His grace, this project exists. If you don't like this, don't read it; it's not for you.
 
-> "Therefore being justified by \*\*faith\*\*, we have peace with God through our Lord Jesus Christ: By whom also we have access by \*\*faith\*\* into this \*\*grace\*\* wherein we stand, and rejoice in hope of the glory of God." Romans 5:5
+> "Therefore being justified by **faith**, we have peace with God through our Lord Jesus Christ: By whom also we have access by **faith** into this **grace** wherein we stand, and rejoice in hope of the glory of God." Romans 5:5

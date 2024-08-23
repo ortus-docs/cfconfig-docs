@@ -10,7 +10,7 @@ Here are the locations CFConfig will look for a JSON file and the order it will 
 
 ### Environment Variable
 
-If an environment variable exists with the name `CFConfigFile`, `CFConfigWeb`, or `CFConfigServer` it will be used as an absolute path to the JSON file or a relative path in relation to the web root.. An example of setting this in Windows would be:
+If an environment variable exists with the name `CFConfigFile`, `CFConfigWeb`, or `CFConfigServer` it will be used as an absolute path to the JSON file or a relative path in relation to the web root. An example of setting this in Windows would be:
 
 ```
 C:/> SETX cfconfigfile "C:/path/to/myConfig.json"
@@ -65,7 +65,7 @@ Note, you would never need to use all the properties above at the same time. The
 
 ### ModCFML Support for Lucee Contexts
 
-If you are using CommandBox's ModCFML support with Lucee, there can be a different set of settings for each Lucee web context.  By default, all "web" settings will load into the web context that corresponds with the default CommandBox web root for the server.  You can specify a JSON file for each web context in your `server.json` like so
+If you are using CommandBox's ModCFML support with Lucee, there can be a different set of settings for each Lucee web context.  By default, all "web" settings will load into the web context that corresponds with the default CommandBox web root for the server.  You can specify a JSON file for each web context in your `server.json` like so:
 
 ```json
 {
@@ -78,11 +78,11 @@ If you are using CommandBox's ModCFML support with Lucee, there can be a differe
 }
 ```
 
-The path to the web root as Lucee sees it is appended to the `web` key after a hypen (`-`).  CFConfig will pre-emptively create the web context folders based on the hash of the web root.&#x20;
+The path to the web root as Lucee sees it is appended to the `web` key after a hyphen (`-`).  CFConfig will pre-emptively create the web context folders based on the hash of the web root.
 
 ## Multiple JSON files
 
-Since there are several overlapping conventions, it's possible to have more than one JSON file. For example, you could have a `cfconfigfile` environment variable set as well as a `cfconfig.file` key in your `server.json`. In this case, BOTH JSON files will be imported. When there are two more more JSON files being imported into the same web or server context, the first file will be an overwrite as usual and all subsequent files will be imported in "append" mode so they add to the settings in the previous file.
+Since there are several overlapping conventions, it's possible to have more than one JSON file. For example, you could have a `cfconfigfile` environment variable set as well as a `cfconfig.file` key in your `server.json`. In this case, BOTH JSON files will be imported. When there are two more JSON files being imported into the same web or server context, the first file will be an overwrite as usual and all subsequent files will be imported in "append" mode so they add to the settings in the previous file.
 
 ### `.cfconfig.json` File in Webroot
 
