@@ -4,10 +4,10 @@
 
 ```javascript
 JSONConfig = new path.to.JSONConfig()
-    .setNullSupport( true );
-    .setUseTimeServer( true );
-    .setAdminPassword( 'myPass' );
-    .addCFMapping( '/foo', '/bar' );
+    .setNullSupport( true )
+    .setUseTimeServer( true )
+    .setAdminPassword( 'myPass' )
+    .addCFMapping( '/foo', '/bar' )
     .write();
 ```
 

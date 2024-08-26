@@ -1,6 +1,6 @@
 # Diff Settings
 
-You can diff any two locations, meaning two servers, two JSON files, a server and a JSON file, etc, etc.
+You can diff any two locations, meaning two servers, two JSON files, a server and a JSON file, etc.
 
 ```text
 cfconfig diff server1 server2

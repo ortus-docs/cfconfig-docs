@@ -1,6 +1,6 @@
 # Installation
 
-If you just want to use the core CFConfig services outside of the CLI, you can install them like so:
+If you just want to use the core CFConfig services outside the CLI, you can install them like so:
 
 ```bash
 install cfconfig-services

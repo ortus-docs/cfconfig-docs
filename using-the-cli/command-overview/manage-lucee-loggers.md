@@ -8,7 +8,7 @@ cfconfig logger list from=serverName
 cfconfig logger list from=/path/to/server/home
 ```
 
-To receive the data back as JSON, use the --JSON flag.
+To receive the data back as JSON, use the `--JSON` flag.
 
 ```text
 cfconfig logger list --JSON

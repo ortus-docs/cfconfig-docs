@@ -12,7 +12,7 @@ cfconfig task list from=serverName
 cfconfig task list from=/path/to/server/home
 ```
 
-To receive the data back as JSON, use the --JSON flag.
+To receive the data back as JSON, use the `--JSON` flag.
 
 ```
 cfconfig task list --JSON

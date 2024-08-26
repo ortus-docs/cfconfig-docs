@@ -28,7 +28,7 @@ Each of the components above supports these public methods:
 
 * `setCFHomePath()` - Points to the server home where the config files are to be read or written.
 * `read( CFHomePath )` - Extract the config from the files found in the server home.  You can override `CFHomePath` here too.
-* `write( CFHomePath )` - Write the config out to the files in the server home whether or not they already exist.  You can override `CFHomePath` here too.
+* `write( CFHomePath )` - Write the config out to the files in the server home whether or not they already exist. You can override `CFHomePath` here too.
 * `getMemento()` - Return all configuration in as a raw CFML data structure.  Useful for passing config values to another instance.
 * `setMemento()` - Accept configuration as a raw CFML data structure.  Useful for accepting another instance's data.
 

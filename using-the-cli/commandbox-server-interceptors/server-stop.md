@@ -12,7 +12,7 @@ To enable this feature, add a global config setting in CommandBox like so:
 config set modules.commandbox-cfconfig.exportOnStop=true
 ```
 
-The setting above defaults to off. You need to opt-in to this behavior.
+The setting above defaults to off. You need to opt in to this behavior.
 
 ## Usage
 
