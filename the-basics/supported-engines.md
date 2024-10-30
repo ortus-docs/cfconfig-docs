@@ -6,8 +6,9 @@ If you find a setting or feature which is not supported, please send a pull requ
 
 Here's an overview of what's supported.
 
+* **Lucee 5.x**
 * **Lucee 4.x**
-* **Lucee 5.x** 
+* **Adobe CF 2023**
 * **Adobe CF 2021**
 * **Adobe CF 2018**
 * **Adobe CF 2016**
