@@ -8,6 +8,25 @@ CFConfig must determine the server(s) on which to operate, which will either be 
 2. You provide a file path to the server home by using the `to` and/or `from` parameters.
 3. You provide the name of a previously-started CommandBox server, using `to` and/or `from` parameters (see [CommandBox Managing Servers](https://commandbox.ortusbooks.com/embedded-server/manage-servers)).
 
+### Lucee 6/7
+
+The folder containing the `/context/.CFConfig.json` file. An example would be:
+
+```bash
+C:/lucee/tomcat/lucee-server/ 
+cfconfig export from=C:/lucee/tomcat/lucee-server/ fromFormat=luceeServer to=myconfig.json
+```
+
+### Lucee 4/5 Server Context
+
+The folder containing the `/context/lucee-server.xml` file. An example would be:
+
+```bash
+C:/lucee/tomcat/lucee-server/
+
+cfconfig export from=C:/lucee/tomcat/lucee-server/ to=myconfig.json
+```
+
 ### Lucee 4/5 Web Context
 
 The folder containing the `lucee-web.xml.cfm` file. An example would be:
@@ -16,16 +35,6 @@ The folder containing the `lucee-web.xml.cfm` file. An example would be:
 <webroot>C:/myapp/WEB-INF/lucee/
 
 cfconfig export from=C:/myapp/WEB-INF/lucee/ to=myconfig.json
-```
-
-### Lucee 4/5 Server Context
-
-Path to the `lucee-server` folder containing the `/context/lucee-server.xml` file. An example would be:
-
-```bash
-C:/lucee/tomcat/lucee-server/
-
-cfconfig export from=C:/lucee/tomcat/lucee-server/ to=myconfig.json
 ```
 
 ### Adobe 9/10/11/2016/2018/2021/2023/2025 CF Home
