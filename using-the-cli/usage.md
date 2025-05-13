@@ -28,12 +28,14 @@ C:/lucee/tomcat/lucee-server/
 cfconfig export from=C:/lucee/tomcat/lucee-server/ to=myconfig.json
 ```
 
-### Adobe 9/10/11/2016/2018/2021/2023 CF Home
+### Adobe 9/10/11/2016/2018/2021/2023/2025 CF Home
 
 The `cfusion` folder that contains the `lib/neo-runtime.xml` file. An example would be:
 
 ```bash
-C:/ColdFusion11/cfusion/
+C:/ColdFusion2023/cfusion/
+
+cfconfig export from=C:/ColdFusion2025/cfusion/ to=myconfig.json
 ```
 
 ### JSON File
