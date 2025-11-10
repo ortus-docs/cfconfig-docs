@@ -6,8 +6,11 @@ If you find a setting or feature which is not supported, please send a pull requ
 
 Here's an overview of what's supported.
 
+* **BoxLang 1.x**
+* **Lucee 6.x**
 * **Lucee 5.x**
 * **Lucee 4.x**
+* **Adobe CF 2025**
 * **Adobe CF 2023**
 * **Adobe CF 2021**
 * **Adobe CF 2018**
